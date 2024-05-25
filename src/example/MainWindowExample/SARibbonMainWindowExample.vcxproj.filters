@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\gallery\Adobe.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Align-Center.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Align-Left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Align-Right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\ContextCategory.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Decrease-Indent.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Decrease-Margin.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Document-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Download-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Drive-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Dropbox-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Email-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Encode-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Favorit-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\File-Error.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\File-Readonly.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\File-Settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Google-Maps.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Illustrator.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Internet-Explorer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Italic.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Photoshop.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Presentation-File.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\SA.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Underline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\gallery\Word.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\Wrap-Image">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\action.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\action2.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\action3.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\action4.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\al-bothside.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\al-center.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\al-left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\al-right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\bold.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\chinese-char.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\customize.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\customize0.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\delete.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\deleteContext.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\disable.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\enableTest.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\file.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\folder-checkmark.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\folder-cog.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\folder-star.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\folder-stats.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\folder-table.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\help.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\hidePannel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\hideRibbon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\largerFont.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\layout.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\long-text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\presentationFile.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\redo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\remove-app-btn.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\remove.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\removePage.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="saribbonresouce.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="icon\save.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\setText.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\show.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\showContext.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\showHideButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\smallFont.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\test1.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\test2.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\undo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\unlock.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\useCustomize.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\useqss.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\windowsflag-normal.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon\wordwrap.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

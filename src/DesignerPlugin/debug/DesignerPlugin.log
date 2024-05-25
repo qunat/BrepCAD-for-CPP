@@ -1,0 +1,118 @@
+﻿  Generate moc_predefs.h
+  SAFramelessHelper.cpp
+  SARibbonActionsManager.cpp
+  SARibbonApplicationButton.cpp
+  SARibbonBar.cpp
+  SARibbonBarCommands.cpp
+  SARibbonBarContainerExtension.cpp
+  SARibbonBarContainerFactory.cpp
+  SARibbonBarDesignerPlugin.cpp
+  SARibbonBarTaskMenuExtension.cpp
+  SARibbonBarTaskMenuFactory.cpp
+  SARibbonButtonGroupWidget.cpp
+  SARibbonCategory.cpp
+  SARibbonCategoryContainerExtension.cpp
+  SARibbonCategoryContainerFactory.cpp
+  SARibbonCategoryDesignerPlugin.cpp
+  SARibbonCategoryLayout.cpp
+  SARibbonCategoryTaskMenuExtension.cpp
+  SARibbonCheckBox.cpp
+  SARibbonComboBox.cpp
+  SARibbonContextCategory.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+f:\project\saribboncad\src\designerplugin\saribbonbardesignerplugin.cpp(157): warning C4189: “container”: 局部变量已初始化但不引用
+  SARibbonControlButton.cpp
+  SARibbonCtrlContainer.cpp
+  SARibbonCustomizeData.cpp
+  SARibbonCustomizeDialog.cpp
+  SARibbonCustomizeWidget.cpp
+  SARibbonDrawHelper.cpp
+  SARibbonElementCreateDelegate.cpp
+  SARibbonElementManager.cpp
+  SARibbonGallery.cpp
+  SARibbonGalleryGroup.cpp
+  SARibbonGalleryItem.cpp
+  SARibbonLineEdit.cpp
+  SARibbonLineWidgetContainer.cpp
+  SARibbonMainWindow.cpp
+  SARibbonMainWindowContainerExtension.cpp
+  SARibbonMainWindowContainerFactory.cpp
+  SARibbonMainWindowDesignerPlugin.cpp
+  SARibbonMainWindowTaskMenuExtension.cpp
+  SARibbonMainWindowTaskMenuFactory.cpp
+  SARibbonMenu.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  SARibbonPannel.cpp
+  SARibbonPannelDesignerPlugin.cpp
+  SARibbonPannelItem.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  SARibbonPannelLayout.cpp
+  SARibbonPannelOptionButton.cpp
+  SARibbonPannelTaskMenuExtension.cpp
+  SARibbonPluginCollection.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  SARibbonPluginDebugHelper.cpp
+  SARibbonQuickAccessBar.cpp
+  SARibbonSeparatorWidget.cpp
+  SARibbonStackedWidget.cpp
+  SARibbonStyleOption.cpp
+  SARibbonTabBar.cpp
+  SARibbonToolButton.cpp
+  SAWindowButtonGroup.cpp
+  qrc_icon.cpp
+  qrc_resource.cpp
+  moc_SAFramelessHelper.cpp
+  moc_SARibbonActionsManager.cpp
+  moc_SARibbonApplicationButton.cpp
+  moc_SARibbonBar.cpp
+  moc_SARibbonBarContainerExtension.cpp
+  moc_SARibbonBarContainerFactory.cpp
+  moc_SARibbonBarDesignerPlugin.cpp
+  moc_SARibbonBarTaskMenuExtension.cpp
+  moc_SARibbonBarTaskMenuFactory.cpp
+  moc_SARibbonButtonGroupWidget.cpp
+  moc_SARibbonCategory.cpp
+  moc_SARibbonCategoryContainerExtension.cpp
+  moc_SARibbonCategoryContainerFactory.cpp
+  moc_SARibbonCategoryDesignerPlugin.cpp
+  moc_SARibbonCategoryLayout.cpp
+  moc_SARibbonCategoryTaskMenuExtension.cpp
+  moc_SARibbonCheckBox.cpp
+  moc_SARibbonComboBox.cpp
+  moc_SARibbonContextCategory.cpp
+  moc_SARibbonControlButton.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  moc_SARibbonCtrlContainer.cpp
+  moc_SARibbonCustomizeDialog.cpp
+  moc_SARibbonCustomizeWidget.cpp
+  moc_SARibbonGallery.cpp
+  moc_SARibbonGalleryGroup.cpp
+  moc_SARibbonLineEdit.cpp
+  moc_SARibbonMainWindow.cpp
+  moc_SARibbonMainWindowContainerExtension.cpp
+  moc_SARibbonMainWindowContainerFactory.cpp
+  moc_SARibbonMainWindowDesignerPlugin.cpp
+  moc_SARibbonMainWindowTaskMenuExtension.cpp
+  moc_SARibbonMainWindowTaskMenuFactory.cpp
+  moc_SARibbonMenu.cpp
+  moc_SARibbonPannel.cpp
+  moc_SARibbonPannelDesignerPlugin.cpp
+  moc_SARibbonPannelLayout.cpp
+  moc_SARibbonPannelOptionButton.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  moc_SARibbonPannelTaskMenuExtension.cpp
+  moc_SARibbonPluginCollection.cpp
+  moc_SARibbonQuickAccessBar.cpp
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  Header <QtDesigner/QDesignerCustomWidgetInterface> is deprecated. Please include <QtUiPlugin/QDesignerCustomWidgetInterface> instead.
+  moc_SARibbonSeparatorWidget.cpp
+  moc_SARibbonStackedWidget.cpp
+  moc_SARibbonTabBar.cpp
+  moc_SARibbonToolButton.cpp
+  moc_SAWindowButtonGroup.cpp
+    正在创建库 ..\..\bin_qt5.14.2_debug_64\\SARibbonBarDesignerPlugind.lib 和对象 ..\..\bin_qt5.14.2_debug_64\\SARibbonBarDesignerPlugind.exp
+  DesignerPlugin.vcxproj -> F:\project\SARibbonCAD\src\DesignerPlugin\..\..\bin_qt5.14.2_debug_64\SARibbonBarDesignerPlugind.dll
+  copy /y F:\project\SARibbonCAD\bin_qt5.14.2_debug_64\SARibbonBarDesignerPlugind.dll D:\Qt\Qt5.14.2\5.14.2\msvc2017_64\plugins\designer\SARibbonBarDesignerPlugind.dll
+  已复制         1 个文件。
