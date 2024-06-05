@@ -1,4 +1,5 @@
-﻿  Generate moc_predefs.h
+﻿  Reading Qt configuration (E:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
+  Generate moc_predefs.h
   Uic'ing occQt.ui...
   Rcc'ing occqt.qrc...
   Moc'ing occQt.h...
@@ -8,8 +9,8 @@
   main.cpp
   occQt.cpp
   occView.cpp
-f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(295): warning C4189: “aY”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
-f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(294): warning C4189: “aX”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
+f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(296): warning C4189: “aY”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
+f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(295): warning C4189: “aX”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
   qrc_occqt.cpp
   moc_occQt.cpp
   moc_occView.cpp

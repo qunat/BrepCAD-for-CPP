@@ -1,12 +1,5 @@
 ﻿  Generate moc_predefs.h
-  GuiManege.cpp
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(62): warning C4189: “__TMP_LASTTIMES”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(180): warning C4189: “asd”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(148): warning C4189: “screen_height”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(147): warning C4189: “screen_width”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(302): warning C4189: “mydisplaycore”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(192): warning C4189: “formDoc2”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(191): warning C4189: “formDoc1”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(626): warning C4100: “b”: 未引用的形参
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(1034): warning C4100: “b”: 未引用的形参
+  DisplayCore.cpp
+f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(66): warning C4100: “theToUpdateViewer”: 未引用的形参
+f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(66): warning C4100: “transparency”: 未引用的形参
   BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe
