@@ -44,6 +44,7 @@
 #include<map>
 #include <PartSolution.h>
 #include <QDebug>
+#include"WindownsManager.h"
 #define PRINT_COST_START()                                                                                             \
     QElapsedTimer __TMP_COST;                                                                                          \
     __TMP_COST.start();                                                                                                \
@@ -187,18 +188,18 @@ void MainWindow::NewDocument()
     ribbon->removeCategory(CategoryPageMap["categorycategoryTool"]);
     //生成多窗口的QTabWidget
     QTabWidget *MultiWindowsTabWidget = new QTabWidget(this);
-    formDoc = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    PartSolution* formDoc1 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    PartSolution* formDoc2 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    formDoc->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
+    //formDoc = new PartSolution(this); //不指定父窗口，单独用show()方法显示
+    //PartSolution* formDoc1 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
+    //PartSolution* formDoc2 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
+    //formDoc->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
     MultiWindowsTabWidget->setTabsClosable(true);
     // 建立显示零件的窗口
     // myOccView = new OccView(this);
     // myOccView->reset();
     // myOccView->show();
     setCentralWidget(MultiWindowsTabWidget);
-    MultiWindowsTabWidget->addTab(formDoc,"零件1");
-    MultiWindowsTabWidget->setCurrentIndex(1);
+    //MultiWindowsTabWidget->addTab(formDoc,"零件1");
+    //MultiWindowsTabWidget->setCurrentIndex(1);
 
     QFile  qss(".\\Qss\\docktawidget.qss");
 
@@ -299,13 +300,13 @@ void MainWindow::NewDocument()
 
     //先将标签先换到2 不然切换到1时 不会刷新界面
     ribbon->setCurrentIndex(2);
-    Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
+   // Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
     mydockmodeltree = new DockModelTree(par);
     addDockWidget(Qt::LeftDockWidgetArea, mydockmodeltree->dock);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
     this -> mydockmodeltree->UpdateGeometry();
-    connect(formDoc->myOccView, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
+    //connect(formDoc->myOccView, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
 }
 void  MainWindow::mySlot()
 {

@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;debug;./occView;/include;./SARibbonBar;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\inc;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\src;.;debug;./occView;/include;./SARibbonBar;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\inc;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458   /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -182,6 +182,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PartSolution.cpp" />
     <ClCompile Include="RibbonManeger.cpp" />
+    <ClCompile Include="WindownsManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="GuiManege.h" />
@@ -211,6 +212,7 @@
   <ItemGroup>
     <ClInclude Include="display\DisplayCore.h" />
     <ClInclude Include="DockModelTree.h" />
+    <ClInclude Include="WindownsManager.h" />
     <QtMoc Include="PartSolution.h" />
     <ClInclude Include="RibbonManeger.h" />
   </ItemGroup>

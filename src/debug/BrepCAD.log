@@ -1,5 +1,2 @@
 ﻿  Generate moc_predefs.h
-  DisplayCore.cpp
-f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(66): warning C4100: “theToUpdateViewer”: 未引用的形参
-f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(66): warning C4100: “transparency”: 未引用的形参
   BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe

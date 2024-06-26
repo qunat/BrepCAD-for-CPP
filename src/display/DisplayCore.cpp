@@ -8,20 +8,42 @@
 #include <STEPControl_Reader.hxx> 
 #include <TopoDS_Shape.hxx> 
 #include <BRepTools.hxx> 
+#include<string.h>
+//#include <TDocStd_Document.hxx>
+//#include<XCAFDoc/XCAFDoc_ShapeTool.hxx>
+//#include<XCAFDoc/XCAFDoc_ColorTool.hxx>
+//#include<XCAFDoc/XCAFDoc_LayerTool.hxx>
+//#include<XCAFDoc/XCAFDoc_MaterialTool.hxx>
+//#include<XCAFDoc/XCAFDoc_DocumentTool.hxx>
+#include <TopExp_Explorer.hxx>
+#include <TopoDS.hxx>
 
+#include <STEPControl_Reader.hxx>
+#include <TopoDS_Shape.hxx>
+#include <TopExp_Explorer.hxx>
+#include <TopoDS_Face.hxx>
+#include <Quantity_Color.hxx>
+//#include <XCAFDoc_ShapeTool.hxx>
+//#include <XCAFDoc_ColorTool.hxx>
+//#include <TDocStd_Document.hxx>
+//#include <XCAFApp_Application.hxx>
+#include <STEPCAFControl_Reader.hxx>
+#include <iostream>
 using namespace std;
+
+
 
 Display_Core::Display_Core(OccView*parent)
 {
 	Context =parent->getContext();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
-
+	/*
 	// 创建 STEP 文件读取器
 	STEPControl_Reader reader;
 
 	// 加载 STEP 文件
-	IFSelect_ReturnStatus status = reader.ReadFile("C:\\Users\\Administrator\\Desktop\\test1.step");
+	IFSelect_ReturnStatus status = reader.ReadFile("C:\\Users\\Administrator\\Desktop\\NL-3B 后保雷达支架.stp");
 
 	// 检查文件是否成功加载
 	if (status != IFSelect_RetDone) {
@@ -42,6 +64,8 @@ Display_Core::Display_Core(OccView*parent)
 	
 	
 	this->DisplayShape(shape, color, 1);
+	*/
+	Read_step_file_with_names_colors1("C:\\Users\\Administrator\\Desktop\\078.505.9.0100.00.stp");
 	//Context->SetDisplayMode(AIS_Shaded, Standard_True);
 	//TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	//Handle(AIS_Shape) anAisBox = new AIS_Shape(aTopoBox);
@@ -86,3 +110,19 @@ void Display_Core::DisplayShape(TopoDS_Shape shape, Quantity_Color color, double
 		drawer->SetFaceBoundaryDraw(true);
 	*/
 }
+
+void Display_Core::Read_step_file_with_names_colors1(string filename)
+{
+	
+	list<int> assemble_relation_list;
+	map<TopoDS_Shape, string> output_shapes;
+	//create an handle to a document
+	//TDocStd_Document doc = TDocStd_Document(TCollection_ExtendedString("pythonocc-doc"));
+
+	//Get root assembly
+	//XCAFDoc_ShapeTool shape_tool = XCAFDoc_ShapeTool();
+	//XCAFDoc_ColorTool color_tool = XCAFDoc_ColorTool();
+	//XCAFDoc_LayerTool layer_tool = XCAFDoc_LayerTool();
+	
+}
+
