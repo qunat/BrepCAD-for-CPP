@@ -188,6 +188,9 @@ void MainWindow::NewDocument()
     ribbon->removeCategory(CategoryPageMap["categorycategoryTool"]);
     //生成多窗口的QTabWidget
     QTabWidget *MultiWindowsTabWidget = new QTabWidget(this);
+    WindownsManager* windownsmanager = new WindownsManager(this);
+    windownsmanager->CreateNewWindown("零件1");
+    windownsmanager->windowns_name["零件1"]->setAttribute(Qt::WA_DeleteOnClose);
     //formDoc = new PartSolution(this); //不指定父窗口，单独用show()方法显示
     //PartSolution* formDoc1 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
     //PartSolution* formDoc2 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
@@ -198,8 +201,8 @@ void MainWindow::NewDocument()
     // myOccView->reset();
     // myOccView->show();
     setCentralWidget(MultiWindowsTabWidget);
-    //MultiWindowsTabWidget->addTab(formDoc,"零件1");
-    //MultiWindowsTabWidget->setCurrentIndex(1);
+    MultiWindowsTabWidget->addTab(windownsmanager->windowns_name["零件1"],"零件1");
+    MultiWindowsTabWidget->setCurrentIndex(1);
 
     QFile  qss(".\\Qss\\docktawidget.qss");
 

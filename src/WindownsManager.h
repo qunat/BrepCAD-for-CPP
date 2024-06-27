@@ -7,14 +7,15 @@ using namespace std;
 class WindownsManager
 {
 public:
-	WindownsManager(QWidget* parent);
+	WindownsManager(QWidget* par);
 
 	int CreateNewWindown(string WindownName);
+	int CreateNewWindown();
 
 public:
 
 	QWidget* parent;
-	double windowns_id{0};
+	double windowns_id{1};
 	map<string, PartSolution*> windowns_name;
 };
 
