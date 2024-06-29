@@ -15,7 +15,8 @@ public:
 public:
 
 	QWidget* parent;
-	double windowns_id{1};
+	list<string> windowns_id_list{1};
 	map<string, PartSolution*> windowns_name;
+	string current_windown;
 };
 

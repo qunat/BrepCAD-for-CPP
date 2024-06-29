@@ -4,6 +4,7 @@
 #include <AIS_InteractiveContext.hxx>
 #include "PartSolution.h"
 #include <QDebug>
+#include"WindownsManager.h"
 class SARibbonCategory;
 class SARibbonContextCategory;
 class SARibbonCustomizeWidget;
@@ -86,6 +87,8 @@ private:
 public:
     void  UpdateGeometry();
     PartSolution* formDoc;
+    QTabWidget* MultiWindowsTabWidget;
+    WindownsManager* windownsmanager;
 
 public slots:
     void mySlot();
