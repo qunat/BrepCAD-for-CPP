@@ -77,6 +77,7 @@ MainWindow::MainWindow(QWidget* par) : SARibbonMainWindow(par), m_customizeWidge
     MultiWindowsTabWidget = new QTabWidget(this);
     myRibbonManeger = new RibbonManeger();
     windownsmanager = new WindownsManager(this);
+    MultiWindowsTabWidget->hide();
     this->InitWindow();
     
    
@@ -193,18 +194,10 @@ void MainWindow::NewDocument()
     
     windownsmanager->CreateNewWindown();
     windownsmanager->windowns_name[windownsmanager->current_windown]->setAttribute(Qt::WA_DeleteOnClose);
-    //formDoc = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    //PartSolution* formDoc1 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    //PartSolution* formDoc2 = new PartSolution(this); //不指定父窗口，单独用show()方法显示
-    //formDoc->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
     MultiWindowsTabWidget->setTabsClosable(true);
-    // 建立显示零件的窗口
-    // myOccView = new OccView(this);
-    // myOccView->reset();
-    // myOccView->show();
     setCentralWidget(MultiWindowsTabWidget);
-
-    QString winwownname = QString::fromStdString(windownsmanager->current_windown);
+    MultiWindowsTabWidget->show();
+    QString winwownname = QString::fromLocal8Bit(windownsmanager->current_windown.c_str());
     MultiWindowsTabWidget->addTab(windownsmanager->windowns_name[windownsmanager->current_windown], winwownname);
     MultiWindowsTabWidget->setCurrentIndex(1);
 

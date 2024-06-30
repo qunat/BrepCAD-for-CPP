@@ -1,5 +1,7 @@
 #include "WindownsManager.h"
 #include <string>
+#include<QString>
+#include<qobject.h>
 using namespace std;
 WindownsManager::WindownsManager(QWidget* par)
 {
