@@ -76,7 +76,7 @@ MainWindow::MainWindow(QWidget* par) : SARibbonMainWindow(par), m_customizeWidge
     //建立左侧dock 模型树
     MultiWindowsTabWidget = new QTabWidget(this);
     myRibbonManeger = new RibbonManeger();
-    windownsmanager = new WindownsManager(this);
+    windownsmanager = new WindownsManager(this, MultiWindowsTabWidget);
     MultiWindowsTabWidget->hide();
     this->InitWindow();
     
@@ -301,11 +301,12 @@ void MainWindow::NewDocument()
     //先将标签先换到2 不然切换到1时 不会刷新界面
     ribbon->setCurrentIndex(2);
    // Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
-    mydockmodeltree = new DockModelTree(par);
-    addDockWidget(Qt::LeftDockWidgetArea, mydockmodeltree->dock);
+    dockmodeltree = new DockModelTree(par);
+	//dockmodeltreemap[]
+    addDockWidget(Qt::LeftDockWidgetArea, dockmodeltree->dock);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
-    this -> mydockmodeltree->UpdateGeometry();
+    this -> dockmodeltree->UpdateGeometry();
     //connect(formDoc->myOccView, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
 }
 void  MainWindow::mySlot()
@@ -314,7 +315,7 @@ void  MainWindow::mySlot()
 }
 void MainWindow::UpdateGeometry()
 {
-    this->mydockmodeltree->UpdateGeometry();
+    this->dockmodeltree->UpdateGeometry();
 }
 void MainWindow::onShowContextCategory(bool on)
 {
@@ -391,7 +392,7 @@ void MainWindow::onActionHelpTriggered()
                                 "\n ===============")
                              .arg(SARibbonBar::versionString()));
 
-    this->mydockmodeltree->UpdateGeometry();
+    this->dockmodeltree->UpdateGeometry();
    
 }
 

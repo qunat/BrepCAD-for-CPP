@@ -3,10 +3,10 @@
 #include<QString>
 #include<qobject.h>
 using namespace std;
-WindownsManager::WindownsManager(QWidget* par)
+WindownsManager::WindownsManager(QWidget* par, QTabWidget* MultiWindowsTabWidget)
 {
 	parent = par;
-
+	multiwindowstabwidget = MultiWindowsTabWidget;
 
 }
 
@@ -28,4 +28,10 @@ int WindownsManager::CreateNewWindown()
 	windowns_name[WindownName]->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
 	windowns_id_list.push_back(to_string(windowns_id_list.size()+1));
 	return 0;
+}
+
+string WindownsManager::GetCurrentWindown()
+{
+	int index = multiwindowstabwidget->setCurrentIndex();
+	return "123";
 }

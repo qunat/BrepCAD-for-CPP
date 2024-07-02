@@ -82,13 +82,15 @@ private:
     SARibbonBar* ribbon;
     std::map<std::string, SARibbonCategory*>CategoryPageMap;
     //std::map<std::string, PartSolution*>formDoc;
-    DockModelTree * mydockmodeltree;
+    
 
 public:
     void  UpdateGeometry();
     PartSolution* formDoc;
     QTabWidget* MultiWindowsTabWidget;
     WindownsManager* windownsmanager;
+	DockModelTree * dockmodeltree;
+	map <std::string, DockModelTree *>dockmodeltreemap;
 
 public slots:
     void mySlot();

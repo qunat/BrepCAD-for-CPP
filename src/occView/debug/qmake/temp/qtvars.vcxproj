@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ADMINI~1\AppData\Local\Temp\x43gakkn.ll5;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\ADMINI~1\AppData\Local\Temp\x43gakkn.ll5;/include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ADMINI~1\AppData\Local\Temp\qo4prwfa.sdy;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\ADMINI~1\AppData\Local\Temp\qo4prwfa.sdy;/include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -41,7 +41,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>.\</ObjectFileName>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -66,7 +66,7 @@
       <WarningLevel>0</WarningLevel>
     </Midl>
     <ResourceCompile>
-      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
