@@ -32,6 +32,6 @@ int WindownsManager::CreateNewWindown()
 
 string WindownsManager::GetCurrentWindown()
 {
-	int index = multiwindowstabwidget->setCurrentIndex();
-	return "123";
+	int index = multiwindowstabwidget->currentIndex();
+	return to_string(index);
 }
