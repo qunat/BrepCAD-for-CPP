@@ -5,6 +5,8 @@
 #include "PartSolution.h"
 #include <QDebug>
 #include"WindownsManager.h"
+#include<Qstring>
+
 class SARibbonCategory;
 class SARibbonContextCategory;
 class SARibbonCustomizeWidget;
@@ -90,7 +92,7 @@ public:
     QTabWidget* MultiWindowsTabWidget;
     WindownsManager* windownsmanager;
 	DockModelTree * dockmodeltree;
-	map <std::string, DockModelTree *>dockmodeltreemap;
+	map <QString, DockModelTree *>dockmodeltreemap;
 
 public slots:
     void mySlot();

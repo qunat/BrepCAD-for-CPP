@@ -30,8 +30,9 @@ int WindownsManager::CreateNewWindown()
 	return 0;
 }
 
-string WindownsManager::GetCurrentWindown()
+QString WindownsManager::GetCurrentWindown()
 {
 	int index = multiwindowstabwidget->currentIndex();
-	return to_string(index);
+	QString name = multiwindowstabwidget->tabText(index);
+	return name;
 }

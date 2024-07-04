@@ -153,9 +153,9 @@ void MainWindow::InitWindow()
 
     //初始化界面文字 软件名称
     soft_name_Label->setText("BrepCAD");
-    soft_version_Label->setText("2023");
-    soft_name_Label->setGeometry(interactionwidget->size().width()/2+150, interactionwidget->size().height()/2+90, 1500, 130);
-    soft_version_Label->setGeometry(interactionwidget->size().width()+650, interactionwidget->size().height()/2+240, 1500, 90);
+    soft_version_Label->setText("2024");
+    soft_name_Label->setGeometry(interactionwidget->size().width()/2+250, interactionwidget->size().height()/2+90, 1500, 130);
+    soft_version_Label->setGeometry(interactionwidget->size().width()+470, interactionwidget->size().height()/2+240, 1500, 90);
     QFont ft;
     ft.setPointSize(120);
     soft_name_Label->setStyleSheet("color: rgb(134, 136, 139);");
@@ -190,7 +190,6 @@ void MainWindow::NewDocument()
     ribbon->removeCategory(CategoryPageMap["Init_home_page"]);
     ribbon->removeCategory(CategoryPageMap["categorycategoryTool"]);
     //生成多窗口的QTabWidget
-    
     
     windownsmanager->CreateNewWindown();
     windownsmanager->windowns_name[windownsmanager->current_windown]->setAttribute(Qt::WA_DeleteOnClose);
@@ -301,6 +300,7 @@ void MainWindow::NewDocument()
     //先将标签先换到2 不然切换到1时 不会刷新界面
     ribbon->setCurrentIndex(2);
    // Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
+	dockmodeltreemap[windownsmanager->GetCurrentWindown()]= new DockModelTree(par);
     dockmodeltree = new DockModelTree(par);
 	//dockmodeltreemap[]
     addDockWidget(Qt::LeftDockWidgetArea, dockmodeltree->dock);

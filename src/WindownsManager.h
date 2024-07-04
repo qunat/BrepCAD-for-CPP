@@ -13,7 +13,7 @@ public:
 	int CreateNewWindown(string WindownName);
 	int CreateNewWindown();
 
-	string GetCurrentWindown();
+	QString GetCurrentWindown();
 
 public:
 
