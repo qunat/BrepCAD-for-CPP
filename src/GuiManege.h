@@ -17,6 +17,7 @@ class QTextEdit;
 class DockModelTree;
 class OccView;
 class RibbonManeger;
+class WindownsManager;
 
 class MainWindow : public SARibbonMainWindow
 {

@@ -76,7 +76,7 @@ MainWindow::MainWindow(QWidget* par) : SARibbonMainWindow(par), m_customizeWidge
     //建立左侧dock 模型树
     MultiWindowsTabWidget = new QTabWidget(this);
     myRibbonManeger = new RibbonManeger();
-    windownsmanager = new WindownsManager(this, MultiWindowsTabWidget);
+    windownsmanager = new WindownsManager(this);
     MultiWindowsTabWidget->hide();
     this->InitWindow();
     
@@ -301,12 +301,10 @@ void MainWindow::NewDocument()
     ribbon->setCurrentIndex(2);
    // Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
 	dockmodeltreemap[windownsmanager->GetCurrentWindown()]= new DockModelTree(par);
-    dockmodeltree = new DockModelTree(par);
-	//dockmodeltreemap[]
-    addDockWidget(Qt::LeftDockWidgetArea, dockmodeltree->dock);
+    addDockWidget(Qt::LeftDockWidgetArea, dockmodeltreemap[windownsmanager->GetCurrentWindown()]->dock);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
-    this -> dockmodeltree->UpdateGeometry();
+    this ->dockmodeltreemap[windownsmanager->GetCurrentWindown()]->UpdateGeometry();
     //connect(formDoc->myOccView, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
 }
 void  MainWindow::mySlot()
@@ -315,7 +313,7 @@ void  MainWindow::mySlot()
 }
 void MainWindow::UpdateGeometry()
 {
-    this->dockmodeltree->UpdateGeometry();
+    this->dockmodeltreemap[windownsmanager->GetCurrentWindown()]->UpdateGeometry();
 }
 void MainWindow::onShowContextCategory(bool on)
 {

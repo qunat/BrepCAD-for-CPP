@@ -1,9 +1,0 @@
-﻿  Generate moc_predefs.h
-  GuiManege.cpp
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(63): warning C4189: “__TMP_LASTTIMES”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(184): warning C4189: “asd”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(152): warning C4189: “screen_height”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(151): warning C4189: “screen_width”: 局部变量已初始化但不引用
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(628): warning C4100: “b”: 未引用的形参
-f:\宁波莱布尼茨项目\brepcad\src\guimanege.cpp(1036): warning C4100: “b”: 未引用的形参
-  BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe

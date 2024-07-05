@@ -2,16 +2,21 @@
 #include <QtWidgets>
 #include<string>
 #include <PartSolution.h>
+#include<qobject.h>
+
 using namespace std;
+class MainWindow;
 
 class WindownsManager
 {
+	
 public:
 	
-	WindownsManager(QWidget * par, QTabWidget* MultiWindowsTabWidget);
+	WindownsManager(MainWindow * par);
 
 	int CreateNewWindown(string WindownName);
 	int CreateNewWindown();
+	int TabwidgetChangeEvent();
 
 	QString GetCurrentWindown();
 
