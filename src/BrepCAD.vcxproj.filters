@@ -79,6 +79,9 @@
     <QtMoc Include="PartSolution.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="WindownsManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RibbonManeger.h">
@@ -88,9 +91,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DockModelTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WindownsManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

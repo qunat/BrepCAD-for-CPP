@@ -212,7 +212,7 @@
   <ItemGroup>
     <ClInclude Include="display\DisplayCore.h" />
     <ClInclude Include="DockModelTree.h" />
-    <ClInclude Include="WindownsManager.h" />
+    <QtMoc Include="WindownsManager.h" />
     <QtMoc Include="PartSolution.h" />
     <ClInclude Include="RibbonManeger.h" />
   </ItemGroup>

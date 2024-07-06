@@ -3,29 +3,30 @@
 #include<string>
 #include <PartSolution.h>
 #include<qobject.h>
-
+#include <QDockWidget>
 using namespace std;
 class MainWindow;
 
-class WindownsManager
+class WindownsManager:public QObject
 {
-	
+	Q_OBJECT
 public:
 	
 	WindownsManager(MainWindow * par);
-
 	int CreateNewWindown(string WindownName);
 	int CreateNewWindown();
-	int TabwidgetChangeEvent();
-
 	QString GetCurrentWindown();
 
 public:
-
-	QWidget* parent;
+	MainWindow* parent;
+	QDockWidget * dock;
 	list<string> windowns_id_list{1};
 	map<string, PartSolution*> windowns_name;
 	QTabWidget *multiwindowstabwidget;
 	string current_windown;
+public slots:
+
+	int TabwidgetChangeEvent();
+
 };
 

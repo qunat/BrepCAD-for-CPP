@@ -4,11 +4,12 @@
 #include <QTreeWidget>
 #include <QObject>
 #include <QDebug>
+class MainWindow;
 
 class DockModelTree
 {
 public:
-	DockModelTree(QWidget*parent);
+	DockModelTree(MainWindow*parent);
 	~DockModelTree();
 	void UpdateGeometry();
 	void CreateModelTree();
@@ -17,6 +18,7 @@ public slots:
 		qDebug() << "Slot called!";
 	}
 public:
+	MainWindow* parent;
 	QDockWidget  *dock;
 	QTabWidget* dock_tabWidget;
 	QWidget* tab_1;

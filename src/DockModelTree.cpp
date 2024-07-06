@@ -6,14 +6,15 @@
 #include <QtWidgets>
 #include <QStyleFactory>
 #include <QDebug>
+#include"GuiManege.h"
 
-DockModelTree::DockModelTree(QWidget* parent)
+DockModelTree::DockModelTree(MainWindow* parent)
 {	
-
-	int dock_width = 300;
-	dock = new QDockWidget(QObject::tr("组合浏览器"), parent);
-	dock->setMinimumSize(QSize(dock_width, 360));
-	dock_tabWidget=new QTabWidget(dock);
+	parent = parent;
+	int dock_width = 360;
+	//dock = new QDockWidget(QObject::tr("组合浏览器"), parent);
+	//dock->setMinimumSize(QSize(dock_width, 360));
+	dock_tabWidget=new QTabWidget(parent->windownsmanager->dock);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
 	tab_1 = new QWidget();

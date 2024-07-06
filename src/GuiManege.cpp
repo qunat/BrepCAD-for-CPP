@@ -300,11 +300,11 @@ void MainWindow::NewDocument()
     //先将标签先换到2 不然切换到1时 不会刷新界面
     ribbon->setCurrentIndex(2);
    // Display_Core* mydisplaycore = new Display_Core(formDoc->myOccView);
-	dockmodeltreemap[windownsmanager->GetCurrentWindown()]= new DockModelTree(par);
-    addDockWidget(Qt::LeftDockWidgetArea, dockmodeltreemap[windownsmanager->GetCurrentWindown()]->dock);
+	//dockmodeltree= new DockModelTree(par);
+    //addDockWidget(Qt::LeftDockWidgetArea, dockmodeltree->dock);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
-    this ->dockmodeltreemap[windownsmanager->GetCurrentWindown()]->UpdateGeometry();
+    //this ->dockmodeltree->UpdateGeometry();
     //connect(formDoc->myOccView, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
 }
 void  MainWindow::mySlot()
@@ -313,7 +313,7 @@ void  MainWindow::mySlot()
 }
 void MainWindow::UpdateGeometry()
 {
-    this->dockmodeltreemap[windownsmanager->GetCurrentWindown()]->UpdateGeometry();
+    //this->dockmodeltreemap[windownsmanager->GetCurrentWindown()]->UpdateGeometry();
 }
 void MainWindow::onShowContextCategory(bool on)
 {

@@ -93,7 +93,7 @@ public:
     QTabWidget* MultiWindowsTabWidget;
     WindownsManager* windownsmanager;
 	DockModelTree * dockmodeltree;
-	map <QString, DockModelTree *>dockmodeltreemap;
+	map <string, DockModelTree *>dockmodeltreemap;
 
 public slots:
     void mySlot();
