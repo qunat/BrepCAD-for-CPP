@@ -15,18 +15,21 @@ public:
 	WindownsManager(MainWindow * par);
 	int CreateNewWindown(string WindownName);
 	int CreateNewWindown();
+	
 	QString GetCurrentWindown();
 
 public:
 	MainWindow* parent;
-	QDockWidget * dock;
+	QDockWidget * dock=nullptr;
 	list<string> windowns_id_list{1};
 	map<string, PartSolution*> windowns_name;
 	QTabWidget *multiwindowstabwidget;
 	string current_windown;
+
 public slots:
 
 	int TabwidgetChangeEvent();
+	int TabwidgetClickedEvent();
 
 };
 
