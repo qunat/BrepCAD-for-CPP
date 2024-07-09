@@ -94,7 +94,7 @@ public:
     WindownsManager* windownsmanager;
 	DockModelTree * dockmodeltree;
 	map <string, DockModelTree *>dockmodeltreemap;
-
+	int initializationsignal{0};//初始化界面完成信号
 public slots:
     void mySlot();
 };

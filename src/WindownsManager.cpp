@@ -72,7 +72,9 @@ int WindownsManager::TabwidgetClickedEvent()
 int WindownsManager::TabwidgetChangeEvent()
 {	
 
-	current_windown = this->GetCurrentWindown().toStdString();
+	current_windown = this->GetCurrentWindown().toLocal8Bit();
+	dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);//modeltree ÇĞ»»
+	multiwindowstabwidget->updateGeometry();
 	
 	
 	return 0;

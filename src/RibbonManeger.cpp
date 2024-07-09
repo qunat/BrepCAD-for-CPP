@@ -81,7 +81,7 @@ void RibbonManeger::AutoCreateRibbon()
         QStringList content_list = content.split("\n");
         for (int i = 0; i < content_list.size(); i++)
         {
-			std::cout << content_list[i].toStdString() << std::endl;
+			//std::cout << content_list[i].toStdString() << std::endl;
 		}
 
 		file.close();

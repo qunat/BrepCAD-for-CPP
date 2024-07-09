@@ -12,8 +12,6 @@ DockModelTree::DockModelTree(MainWindow* parent)
 {	
 	parent = parent;
 	int dock_width = 360;
-	//dock = new QDockWidget(QObject::tr("组合浏览器"), parent);
-	//dock->setMinimumSize(QSize(dock_width, 360));
 	dock_tabWidget=new QTabWidget(parent->windownsmanager->dock);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
@@ -50,7 +48,7 @@ void DockModelTree::CreateModelTree()
 	ModelTree->setColumnCount(2);//设置列数
 	ModelTree->setHeaderLabels(QStringList() << "名称" << "附件" << "最新");//  设置树形控件头部的标题
 	ModelTree->setAlternatingRowColors(	true);
-	//ModelTree->setGeometry(0, 0, 300, 864-30-30);
+	ModelTree->setColumnWidth(0,120);
 
 	QTreeWidgetItem* history_model_root = new QTreeWidgetItem(ModelTree);
 	history_model_root->setText(0, "历史模型记录");
