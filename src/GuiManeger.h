@@ -6,6 +6,7 @@
 #include <QDebug>
 #include"WindownsManager.h"
 #include<Qstring>
+#include"display/DisplayCore.h"
 
 class SARibbonCategory;
 class SARibbonContextCategory;
@@ -94,6 +95,7 @@ public:
     WindownsManager* windownsmanager;
 	DockModelTree * dockmodeltree;
 	map <string, DockModelTree *>dockmodeltreemap;
+    map <string, DisplayCore*>DisplayCoreManeger;
 	int initializationsignal{0};//初始化界面完成信号
 public slots:
     void mySlot();

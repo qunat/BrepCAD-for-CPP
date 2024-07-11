@@ -1,4 +1,4 @@
-﻿#include "GuiManege.h"
+﻿#include "GuiManeger.h"
 #include <QApplication>
 #include <QElapsedTimer>
 #include <QDebug>

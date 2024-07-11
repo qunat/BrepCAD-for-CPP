@@ -33,11 +33,12 @@ using namespace std;
 
 
 
-Display_Core::Display_Core(OccView*parent)
+DisplayCore::DisplayCore(OccView*parent)
 {
 	Context =parent->getContext();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
+	this->DisplayShape(aTopoBox, color, 1);
 	/*
 	// 创建 STEP 文件读取器
 	STEPControl_Reader reader;
@@ -63,9 +64,9 @@ Display_Core::Display_Core(OccView*parent)
 
 	
 	
-	this->DisplayShape(shape, color, 1);
+	
 	*/
-	Read_step_file_with_names_colors1("C:\\Users\\Administrator\\Desktop\\078.505.9.0100.00.stp");
+	//Read_step_file_with_names_colors1("C:\\Users\\Administrator\\Desktop\\078.505.9.0100.00.stp");
 	//Context->SetDisplayMode(AIS_Shaded, Standard_True);
 	//TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	//Handle(AIS_Shape) anAisBox = new AIS_Shape(aTopoBox);
@@ -81,13 +82,13 @@ Display_Core::Display_Core(OccView*parent)
 	//Handle(Prs3d_LineAspect) aspect = new Prs3d_LineAspect(Quantity_NOC_BLACK,Aspect_TOL_SOLID,1.0);
 	//drawer->SetFaceBoundaryAspect(aspect);
 	// redisplay presentation to have applyed parameters of face boundary aspect
-	//anAisBox->SetColor(Quantity_NOC_AZURE);
+	//anAisBox->SetColor(Quantity_NOC_STEELBLUE);
 	//Context->Display(anAisBox,Standard_True);
 	
 
 
 }
-void Display_Core::DisplayShape(TopoDS_Shape shape, Quantity_Color color, double transparency, Graphic3d_MaterialAspect material ,Standard_Boolean theToUpdateViewer)
+void DisplayCore::DisplayShape(TopoDS_Shape shape, Quantity_Color color, double transparency, Graphic3d_MaterialAspect material ,Standard_Boolean theToUpdateViewer)
 {
 	Handle(AIS_Shape) ais_shape = new AIS_Shape(shape);
 	ais_shape->SetMaterial(Graphic3d_MaterialAspect(Graphic3d_NOM_STEEL));
@@ -111,7 +112,7 @@ void Display_Core::DisplayShape(TopoDS_Shape shape, Quantity_Color color, double
 	*/
 }
 
-void Display_Core::Read_step_file_with_names_colors1(string filename)
+void DisplayCore::Read_step_file_with_names_colors1(string filename)
 {
 	
 	list<int> assemble_relation_list;

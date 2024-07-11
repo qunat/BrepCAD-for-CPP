@@ -2,7 +2,7 @@
 #include <qfile.h>
 #include <fstream>
 #include<QtCore/qfiledevice.h>
-#include "GuiManege.h"
+#include "GuiManeger.h"
 #include <QApplication>
 #include <QFile>
 #include <QTextEdit>

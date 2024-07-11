@@ -40,7 +40,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GuiManege.cpp">
+    <ClCompile Include="GuiManeger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RibbonManeger.cpp">
@@ -73,7 +73,7 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="GuiManege.h">
+    <QtMoc Include="GuiManeger.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="PartSolution.h">

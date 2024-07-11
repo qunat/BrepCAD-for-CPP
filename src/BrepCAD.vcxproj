@@ -178,14 +178,14 @@
   <ItemGroup>
     <ClCompile Include="display\DisplayCore.cpp" />
     <ClCompile Include="DockModelTree.cpp" />
-    <ClCompile Include="GuiManege.cpp" />
+    <ClCompile Include="GuiManeger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PartSolution.cpp" />
     <ClCompile Include="RibbonManeger.cpp" />
     <ClCompile Include="WindownsManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="GuiManege.h" />
+    <QtMoc Include="GuiManeger.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">

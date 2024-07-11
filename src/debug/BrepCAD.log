@@ -1,29 +1,5 @@
 ﻿  Generate moc_predefs.h
-  DockModelTree.cpp
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(17): warning C4005: “M_E”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(155): note: 参见“M_E”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(18): warning C4005: “M_LOG2E”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(159): note: 参见“M_LOG2E”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(19): warning C4005: “M_LOG10E”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(163): note: 参见“M_LOG10E”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(20): warning C4005: “M_LN2”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(167): note: 参见“M_LN2”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(21): warning C4005: “M_LN10”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(171): note: 参见“M_LN10”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: “M_PI”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(175): note: 参见“M_PI”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(23): warning C4005: “M_PI_2”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(179): note: 参见“M_PI_2”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(24): warning C4005: “M_PI_4”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(183): note: 参见“M_PI_4”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(25): warning C4005: “M_1_PI”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(187): note: 参见“M_1_PI”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(26): warning C4005: “M_2_PI”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(191): note: 参见“M_2_PI”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(27): warning C4005: “M_2_SQRTPI”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(195): note: 参见“M_2_SQRTPI”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(28): warning C4005: “M_SQRT2”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(199): note: 参见“M_SQRT2”的前一个定义
-e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(29): warning C4005: “M_SQRT1_2”: 宏重定义
-  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(203): note: 参见“M_SQRT1_2”的前一个定义
+  DisplayCore.cpp
+f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(91): warning C4100: “theToUpdateViewer”: 未引用的形参
+f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(91): warning C4100: “transparency”: 未引用的形参
   BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe

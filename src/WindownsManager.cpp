@@ -2,10 +2,11 @@
 #include <string>
 #include<QString>
 #include<qobject.h>
-#include<GuiManege.h>
+#include<GuiManeger.h>
 #include"DockModelTree.h"
 #include <QDockWidget>
 #include<Qstring>
+#include"display/DisplayCore.h"
 using namespace std;
 
 WindownsManager::WindownsManager(MainWindow* par)
@@ -36,6 +37,9 @@ int WindownsManager::CreateNewWindown()
 	windowns_name[WindownName] = new PartSolution(parent); //不指定父窗口，单独用show()方法显示
 	windowns_name[WindownName]->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
 	windowns_id_list.push_back(to_string(windowns_id_list.size()+1));
+
+	//Create DisplayCoreManeger
+	parent->DisplayCoreManeger[WindownName] = new DisplayCore(windowns_name[WindownName]->myOccView);
 
 	int dock_width = 300;
 	if (dock == nullptr)
