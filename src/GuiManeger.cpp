@@ -181,6 +181,7 @@ void MainWindow::InitWindow()
     showMaximized();
     setWindowIcon(QIcon(":/icon/icon/SA.svg"));
     connect(new_document, &QAction::triggered, this, &MainWindow::NewDocument);
+    connect(open_document, &QAction::triggered, this, &MainWindow::OpenDocument);
     int asd=ribbon->geometry().width();
 }
 void MainWindow::NewDocument()
@@ -199,6 +200,28 @@ void MainWindow::NewDocument()
     QString winwownname = QString::fromLocal8Bit(windownsmanager->current_windown.c_str());//获取新建窗口名字
     MultiWindowsTabWidget->addTab(windownsmanager->windowns_name[windownsmanager->current_windown], winwownname);
 	MultiWindowsTabWidget->setCurrentIndex(windownsmanager->windowns_name.size()-1);//设置新建窗口为当前的tabwidget
+    CreateRibbon();
+
+    
+}
+void MainWindow::OpenDocument()
+{
+    // 移除初始化界面的panel
+        ribbon->removeCategory(CategoryPageMap["Init_home_page"]);
+    ribbon->removeCategory(CategoryPageMap["categorycategoryTool"]);
+    //生成多窗口的QTabWidget
+    windownsmanager->CreateNewWindown("新建窗口");//创建新窗口
+    windownsmanager->windowns_name[windownsmanager->current_windown]->setAttribute(Qt::WA_DeleteOnClose);//设置tab关闭选项
+    MultiWindowsTabWidget->setTabsClosable(true);
+    setCentralWidget(MultiWindowsTabWidget);//设置CentralWidget
+    MultiWindowsTabWidget->show();
+    QString winwownname = QString::fromLocal8Bit(windownsmanager->current_windown.c_str());//获取新建窗口名字
+    MultiWindowsTabWidget->addTab(windownsmanager->windowns_name[windownsmanager->current_windown], winwownname);
+    MultiWindowsTabWidget->setCurrentIndex(windownsmanager->windowns_name.size() - 1);//设置新建窗口为当前的tabwidget
+    CreateRibbon();
+}
+void MainWindow::CreateRibbon()
+{
     QFile  qss(".\\Qss\\docktawidget.qss");
 
     if (qss.open(QFile::ReadOnly))
@@ -209,101 +232,100 @@ void MainWindow::NewDocument()
         qss.close();
     }
 
-	if (initializationsignal == 0)
-	{
-		//通过setContentsMargins设置ribbon四周的间距
-		ribbon->setContentsMargins(0.0, 0, 0.0, 0);
+    if (initializationsignal == 0)
+    {
+        //通过setContentsMargins设置ribbon四周的间距
+        ribbon->setContentsMargins(0.0, 0, 0.0, 0);
 
-		//添加主标签页 - 通过addCategoryPage工厂函数添加
-		SARibbonCategory* categoryMain = ribbon->addCategoryPage(tr("主页"));
-		CategoryPageMap["categoryMain"] = categoryMain;
-		CategoryPageMap["categoryMain"]->setObjectName(("categoryMain"));
-		createCategoryMain(CategoryPageMap["categoryMain"]);
-
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryCurve = new SARibbonCategory();
-		CategoryPageMap["categoryCurve"] = categoryCurve;
-		CategoryPageMap["categoryCurve"]->setCategoryName(tr("曲线"));
-		CategoryPageMap["categoryCurve"]->setObjectName(("categoryOther"));
-		createCategoryCurve(CategoryPageMap["categoryCurve"]);
-		ribbon->addCategoryPage(CategoryPageMap["categoryCurve"]);
+        //添加主标签页 - 通过addCategoryPage工厂函数添加
+        SARibbonCategory* categoryMain = ribbon->addCategoryPage(tr("主页"));
+        CategoryPageMap["categoryMain"] = categoryMain;
+        CategoryPageMap["categoryMain"]->setObjectName(("categoryMain"));
+        createCategoryMain(CategoryPageMap["categoryMain"]);
 
 
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categorySurface = new SARibbonCategory();
-		CategoryPageMap["categorySurface"] = categorySurface;
-		CategoryPageMap["categorySurface"]->setCategoryName(("曲面"));
-		CategoryPageMap["categorySurface"]->setObjectName(("categorySurface"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryDelete"]);
-		createCategoryDelete(CategoryPageMap["categorySurface"]);
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryAssembly = new SARibbonCategory();
-		CategoryPageMap["categoryAssembly"] = categoryAssembly;
-		CategoryPageMap["categoryAssembly"]->setCategoryName(("装配"));
-		CategoryPageMap["categoryAssembly"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryAssembly"]);
-		createCategoryDelete(CategoryPageMap["categoryAssembly"]);
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryAnylyse = new SARibbonCategory();
-		CategoryPageMap["categoryAnylyse"] = categoryAnylyse;
-		CategoryPageMap["categoryAnylyse"]->setCategoryName(("分析"));
-		CategoryPageMap["categoryAnylyse"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryAnylyse"]);
-		createCategoryDelete(CategoryPageMap["categoryAnylyse"]);
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryViewer = new SARibbonCategory();
-		CategoryPageMap["categoryViewer"] = categoryViewer;
-		CategoryPageMap["categoryViewer"]->setCategoryName(("视图"));
-		CategoryPageMap["categoryViewer"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryViewer"]);
-		createCategoryDelete(CategoryPageMap["categoryViewer"]);
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categorySelect = new SARibbonCategory();
-		CategoryPageMap["categorySelect"] = categorySelect;
-		CategoryPageMap["categorySelect"]->setCategoryName(("选择"));
-		CategoryPageMap["categorySelect"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categorySelect"]);
-		createCategoryDelete(CategoryPageMap["categorySelect"]);
-
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryRender = new SARibbonCategory();
-		CategoryPageMap["categoryRender"] = categoryRender;
-		CategoryPageMap["categoryRender"]->setCategoryName(("渲染"));
-		CategoryPageMap["categoryRender"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryRender"]);
-		createCategoryDelete(CategoryPageMap["categoryRender"]);
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryCurve = new SARibbonCategory();
+        CategoryPageMap["categoryCurve"] = categoryCurve;
+        CategoryPageMap["categoryCurve"]->setCategoryName(tr("曲线"));
+        CategoryPageMap["categoryCurve"]->setObjectName(("categoryOther"));
+        createCategoryCurve(CategoryPageMap["categoryCurve"]);
+        ribbon->addCategoryPage(CategoryPageMap["categoryCurve"]);
 
 
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryTools = new SARibbonCategory();
-		CategoryPageMap["categoryTools"] = categoryTools;
-		CategoryPageMap["categoryTools"]->setCategoryName(("工具"));
-		CategoryPageMap["categoryTools"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryTools"]);
-		createCategoryDelete(CategoryPageMap["categoryTools"]);
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categorySurface = new SARibbonCategory();
+        CategoryPageMap["categorySurface"] = categorySurface;
+        CategoryPageMap["categorySurface"]->setCategoryName(("曲面"));
+        CategoryPageMap["categorySurface"]->setObjectName(("categorySurface"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryDelete"]);
+        createCategoryDelete(CategoryPageMap["categorySurface"]);
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryAssembly = new SARibbonCategory();
+        CategoryPageMap["categoryAssembly"] = categoryAssembly;
+        CategoryPageMap["categoryAssembly"]->setCategoryName(("装配"));
+        CategoryPageMap["categoryAssembly"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryAssembly"]);
+        createCategoryDelete(CategoryPageMap["categoryAssembly"]);
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryAnylyse = new SARibbonCategory();
+        CategoryPageMap["categoryAnylyse"] = categoryAnylyse;
+        CategoryPageMap["categoryAnylyse"]->setCategoryName(("分析"));
+        CategoryPageMap["categoryAnylyse"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryAnylyse"]);
+        createCategoryDelete(CategoryPageMap["categoryAnylyse"]);
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryViewer = new SARibbonCategory();
+        CategoryPageMap["categoryViewer"] = categoryViewer;
+        CategoryPageMap["categoryViewer"]->setCategoryName(("视图"));
+        CategoryPageMap["categoryViewer"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryViewer"]);
+        createCategoryDelete(CategoryPageMap["categoryViewer"]);
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categorySelect = new SARibbonCategory();
+        CategoryPageMap["categorySelect"] = categorySelect;
+        CategoryPageMap["categorySelect"]->setCategoryName(("选择"));
+        CategoryPageMap["categorySelect"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categorySelect"]);
+        createCategoryDelete(CategoryPageMap["categorySelect"]);
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryRender = new SARibbonCategory();
+        CategoryPageMap["categoryRender"] = categoryRender;
+        CategoryPageMap["categoryRender"]->setCategoryName(("渲染"));
+        CategoryPageMap["categoryRender"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryRender"]);
+        createCategoryDelete(CategoryPageMap["categoryRender"]);
 
 
-		//添加其他标签页 - 直接new SARibbonCategory添加
-		SARibbonCategory* categoryApplication = new SARibbonCategory();
-		CategoryPageMap["categoryApplication"] = categoryApplication;
-		CategoryPageMap["categoryApplication"]->setCategoryName(("应用模块"));
-		CategoryPageMap["categoryApplication"]->setObjectName(("categoryDelete"));
-		ribbon->addCategoryPage(CategoryPageMap["categoryApplication"]);
-		createCategoryDelete(CategoryPageMap["categoryApplication"]);
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryTools = new SARibbonCategory();
+        CategoryPageMap["categoryTools"] = categoryTools;
+        CategoryPageMap["categoryTools"]->setCategoryName(("工具"));
+        CategoryPageMap["categoryTools"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryTools"]);
+        createCategoryDelete(CategoryPageMap["categoryTools"]);
 
-		initializationsignal = 1;
-	}
-    
+
+        //添加其他标签页 - 直接new SARibbonCategory添加
+        SARibbonCategory* categoryApplication = new SARibbonCategory();
+        CategoryPageMap["categoryApplication"] = categoryApplication;
+        CategoryPageMap["categoryApplication"]->setCategoryName(("应用模块"));
+        CategoryPageMap["categoryApplication"]->setObjectName(("categoryDelete"));
+        ribbon->addCategoryPage(CategoryPageMap["categoryApplication"]);
+        createCategoryDelete(CategoryPageMap["categoryApplication"]);
+
+        initializationsignal = 1;
+    }
+
     //先将标签先换到2 不然切换到1时 不会刷新界面
     ribbon->setCurrentIndex(2);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
-    
 }
 void  MainWindow::mySlot()
 {

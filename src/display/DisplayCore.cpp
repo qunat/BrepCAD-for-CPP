@@ -29,6 +29,8 @@
 //#include <XCAFApp_Application.hxx>
 #include <STEPCAFControl_Reader.hxx>
 #include <iostream>
+#include <QFileDialog>
+#include <qmessagebox.h>
 using namespace std;
 
 
@@ -125,5 +127,12 @@ void DisplayCore::Read_step_file_with_names_colors1(string filename)
 	//XCAFDoc_ColorTool color_tool = XCAFDoc_ColorTool();
 	//XCAFDoc_LayerTool layer_tool = XCAFDoc_LayerTool();
 	
+}
+
+int DisplayCore::Read_step_file(string filename)
+{
+	
+
+	return 0;
 }
 

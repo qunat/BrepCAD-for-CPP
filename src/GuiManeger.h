@@ -83,6 +83,8 @@ private:
     RibbonManeger* myRibbonManeger;
     void  InitWindow();
     void  NewDocument();
+    void  OpenDocument();
+    void  CreateRibbon();
     SARibbonBar* ribbon;
     std::map<std::string, SARibbonCategory*>CategoryPageMap;
     //std::map<std::string, PartSolution*>formDoc;

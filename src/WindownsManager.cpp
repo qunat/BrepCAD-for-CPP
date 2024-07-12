@@ -7,6 +7,8 @@
 #include <QDockWidget>
 #include<Qstring>
 #include"display/DisplayCore.h"
+#include <QFileDialog>
+#include <qmessagebox.h>
 using namespace std;
 
 WindownsManager::WindownsManager(MainWindow* par)
@@ -23,10 +25,46 @@ WindownsManager::WindownsManager(MainWindow* par)
 int WindownsManager::CreateNewWindown(string WindownName)
 {
 	
-	//formDoc = new PartSolution(parent); //不指定父窗口，单独用show()方法显示
-	windowns_name[WindownName]= new PartSolution(parent); //不指定父窗口，单独用show()方法显示
+	QString fileName = QFileDialog::getOpenFileName(
+		parent,
+		QString::fromLocal8Bit("选择打开文件"),
+		"c:/",
+		tr("step(*step *stp )"));
+	
+	QStringList fileNameList = fileName.split("/");
+	//qDebug() << fileNameList[fileName.size()-1].toLocal8Bit();
+	fileName = fileNameList[fileNameList.size() - 1];
+	WindownName = fileName.toLocal8Bit();
+
+	current_windown = WindownName;
+	windowns_name[WindownName] = new PartSolution(parent); //不指定父窗口，单独用show()方法显示
 	windowns_name[WindownName]->setAttribute(Qt::WA_DeleteOnClose); //关闭时自动删除
-	return true;
+	windowns_id_list.push_back(to_string(windowns_id_list.size() + 1));
+
+	//Create DisplayCoreManeger
+	parent->DisplayCoreManeger[WindownName] = new DisplayCore(windowns_name[WindownName]->myOccView);
+
+	int dock_width = 300;
+	if (dock == nullptr)
+	{
+		dock = new QDockWidget(QString::fromLocal8Bit("组合浏览器"), parent);
+		dock->setMinimumSize(QSize(dock_width, 360));
+		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
+	}
+
+	else
+	{
+		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
+		dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);
+	}
+
+	//ribbon->setCurrentIndex(0);
+	//ribbon->updateRibbonGeometry();
+	//this->dockmodeltree->UpdateGeometry();
+	
+	return 0;
 }
 
 int WindownsManager::CreateNewWindown()

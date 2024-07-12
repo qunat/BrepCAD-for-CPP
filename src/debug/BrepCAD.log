@@ -1,5 +1,131 @@
 ﻿  Generate moc_predefs.h
-  DisplayCore.cpp
-f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(91): warning C4100: “theToUpdateViewer”: 未引用的形参
-f:\宁波莱布尼茨项目\brepcad\src\display\displaycore.cpp(91): warning C4100: “transparency”: 未引用的形参
+  WindownsManager.cpp
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x30c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x30e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x30f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x315 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x46f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x470 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x473 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x474 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x475 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x476 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x477 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x478 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x479 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x47c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x47d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x47e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x47f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x480 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x481 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x489 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x48a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x48b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x48c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x48d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4d6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4d9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4db 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4dc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4de 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4df 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4e2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x4e3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x616 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x618 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x619 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x61b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x61c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x61d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x61e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x89c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x89d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8aa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8ae 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8b6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8b7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8b8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8b9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8d7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x8d8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x95d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x95e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x961 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x962 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x963 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x964 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x965 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x966 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x967 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x96f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x977 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x978 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x979 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x97a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x97b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0x9d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb02 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb04 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb05 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb07 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb08 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb09 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xb0a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xe23 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xe25 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xe26 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xf05 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xf07 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\windownsmanager.cpp : warning C4828: 文件包含在偏移 0xf08 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(17): warning C4005: “M_E”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(155): note: 参见“M_E”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(18): warning C4005: “M_LOG2E”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(159): note: 参见“M_LOG2E”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(19): warning C4005: “M_LOG10E”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(163): note: 参见“M_LOG10E”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(20): warning C4005: “M_LN2”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(167): note: 参见“M_LN2”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(21): warning C4005: “M_LN10”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(171): note: 参见“M_LN10”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: “M_PI”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(175): note: 参见“M_PI”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(23): warning C4005: “M_PI_2”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(179): note: 参见“M_PI_2”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(24): warning C4005: “M_PI_4”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(183): note: 参见“M_PI_4”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(25): warning C4005: “M_1_PI”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(187): note: 参见“M_1_PI”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(26): warning C4005: “M_2_PI”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(191): note: 参见“M_2_PI”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(27): warning C4005: “M_2_SQRTPI”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(195): note: 参见“M_2_SQRTPI”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(28): warning C4005: “M_SQRT2”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(199): note: 参见“M_SQRT2”的前一个定义
+e:\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(29): warning C4005: “M_SQRT1_2”: 宏重定义
+  e:\qt\qt5.13.2\5.13.2\msvc2017_64\include\qtcore\qmath.h(203): note: 参见“M_SQRT1_2”的前一个定义
   BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe
