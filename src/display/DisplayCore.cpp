@@ -17,6 +17,7 @@
 //#include<XCAFDoc/XCAFDoc_DocumentTool.hxx>
 #include <TopExp_Explorer.hxx>
 #include <TopoDS.hxx>
+#include <AIS_Trihedron.hxx>
 
 #include <STEPControl_Reader.hxx>
 #include <TopoDS_Shape.hxx>
@@ -31,6 +32,8 @@
 #include <iostream>
 #include <QFileDialog>
 #include <qmessagebox.h>
+#include <Geom_Axis2Placement.hxx>
+#include <gp.hxx>
 using namespace std;
 
 
@@ -38,56 +41,9 @@ using namespace std;
 DisplayCore::DisplayCore(OccView*parent)
 {
 	Context =parent->getContext();
+	Displaytriehedron();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
-	//this->DisplayShape(aTopoBox, color, 1);
-	/*
-	// 创建 STEP 文件读取器
-	STEPControl_Reader reader;
-
-	// 加载 STEP 文件
-	IFSelect_ReturnStatus status = reader.ReadFile("C:\\Users\\Administrator\\Desktop\\NL-3B 后保雷达支架.stp");
-
-	// 检查文件是否成功加载
-	if (status != IFSelect_RetDone) {
-		std::cerr << "Error: Unable to read the STEP file." << std::endl;
-		
-	}
-
-	// 将 STEP 文件内容转换为 OpenCASCADE 的内部表示
-	Standard_Integer nbr = reader.TransferRoots();
-	if (nbr == 0) {
-		std::cerr << "Error: No shapes found in the STEP file." << std::endl;
-		
-	}
-
-	// 获取转换后的形状
-	TopoDS_Shape shape = reader.OneShape();
-
-	
-	
-	
-	*/
-	//Read_step_file_with_names_colors1("C:\\Users\\Administrator\\Desktop\\078.505.9.0100.00.stp");
-	//Context->SetDisplayMode(AIS_Shaded, Standard_True);
-	//TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
-	//Handle(AIS_Shape) anAisBox = new AIS_Shape(aTopoBox);
-	//anAisBox->SetMaterial(Graphic3d_MaterialAspect(Graphic3d_NOM_STEEL));
-	// Set Display mode
-	//anAisBox->SetDisplayMode((int)AIS_DisplayMode::AIS_Shaded);
-	//Handle(Prs3d_LineAspect)    aEdgeAspt;		// Face boundary Aspect
-	//aEdgeAspt = new Prs3d_LineAspect(Quantity_NOC_BLACK, Aspect_TypeOfLine::Aspect_TOL_SOLID, 1.2);
-	// Set Edge Color
-	//anAisBox->Attributes()->SetFaceBoundaryAspect(aEdgeAspt);
-	//auto drawer = anAisBox->Attributes();
-	//drawer->SetFaceBoundaryDraw(true);
-	//Handle(Prs3d_LineAspect) aspect = new Prs3d_LineAspect(Quantity_NOC_BLACK,Aspect_TOL_SOLID,1.0);
-	//drawer->SetFaceBoundaryAspect(aspect);
-	// redisplay presentation to have applyed parameters of face boundary aspect
-	//anAisBox->SetColor(Quantity_NOC_STEELBLUE);
-	//Context->Display(anAisBox,Standard_True);
-	
-
 
 }
 void DisplayCore::DisplayShape(TopoDS_Shape shape, Quantity_Color color, double transparency, Graphic3d_MaterialAspect material ,Standard_Boolean theToUpdateViewer)
@@ -159,5 +115,52 @@ int DisplayCore::Read_step_file(string filename)
 	TopoDS_Shape shape = reader.OneShape();
 	this->DisplayShape(shape, color, 1);
 	return 0;
+}
+
+int DisplayCore::Displaytriehedron()
+{
+	Handle(Geom_Axis2Placement) axis = new Geom_Axis2Placement(gp::XOY());
+	Handle(AIS_Trihedron) triehedron = new AIS_Trihedron(axis);
+	triehedron->SetXAxisColor(Quantity_Color(Quantity_NOC_RED));
+	triehedron->SetYAxisColor(Quantity_Color(Quantity_NOC_GREEN));
+	triehedron->SetAxisColor(Quantity_Color(Quantity_NOC_BLUE1));
+	Context->Display(triehedron, 0, 3, true);
+	ShapeManeger["坐标系"] = new shape(triehedron);
+	//Handle(drawer) = triehedron.Attributes();
+	return 0;
+}
+
+int DisplayCore::Displayplane()
+{	
+	//plane = Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 1, 0))
+	//ais_plane_xz = AIS_Plane(plane, True)
+	//ais_plane_xz.SetColor(Quantity_Color(Quantity_NOC_GRAY))
+	//ais_plane_xz.SetTypeOfSensitivity(Select3D_TOS_INTERIOR)
+	//asp = Prs3d_LineAspect(Quantity_Color(Quantity_NOC_GREEN), 1, 10)
+	//ais_plane_xz.SetAspect(asp)
+	//self.canva._display.Context.Display(ais_plane_xz, True)
+	//self.shape_maneger_core_dict["X基准面"] = ais_plane_xz
+	return 0;
+}
+
+
+
+
+
+
+
+shape::shape(Handle(AIS_Shape) aisShape)
+{
+	AisShape = aisShape;
+}
+
+shape::shape(Handle(AIS_Trihedron) aisrihedron)
+{
+	Aisrihedron = aisrihedron;
+}
+
+shape::shape(Handle(AIS_Plane) aisplane)
+{
+	AisPlane = aisplane;
 }
 
