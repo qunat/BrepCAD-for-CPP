@@ -40,7 +40,7 @@ DisplayCore::DisplayCore(OccView*parent)
 	Context =parent->getContext();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
-	this->DisplayShape(aTopoBox, color, 1);
+	//this->DisplayShape(aTopoBox, color, 1);
 	/*
 	// 创建 STEP 文件读取器
 	STEPControl_Reader reader;
@@ -131,8 +131,33 @@ void DisplayCore::Read_step_file_with_names_colors1(string filename)
 
 int DisplayCore::Read_step_file(string filename)
 {
+
+	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
+	Quantity_Color color(0.5, 0.6, 0.7, Quantity_TOC_RGB);
 	
 
+	// 创建 STEP 文件读取器
+	STEPControl_Reader reader;
+
+	// 加载 STEP 文件
+	IFSelect_ReturnStatus status = reader.ReadFile(filename.c_str());
+
+	// 检查文件是否成功加载
+	if (status != IFSelect_RetDone) {
+		std::cerr << "Error: Unable to read the STEP file." << std::endl;
+
+	}
+
+	// 将 STEP 文件内容转换为 OpenCASCADE 的内部表示
+	Standard_Integer nbr = reader.TransferRoots();
+	if (nbr == 0) {
+		std::cerr << "Error: No shapes found in the STEP file." << std::endl;
+
+	}
+
+	// 获取转换后的形状
+	TopoDS_Shape shape = reader.OneShape();
+	this->DisplayShape(shape, color, 1);
 	return 0;
 }
 

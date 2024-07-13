@@ -529,18 +529,12 @@ void MainWindow::createCategoryInitHome(SARibbonCategory* page)
     QAction* new_document = createAction(tr("新建"), ":/icon/icons/新建.png");
     new_document->setShortcut(QKeySequence(QLatin1String("Ctrl+S")));
     pannelStructure->addLargeAction(new_document);
-    connect(new_document, &QAction::triggered, this, [this](bool b) {
-        Q_UNUSED(b);
-        //this->m_edit->append("actSaveion clicked");
-    });
+    connect(new_document, &QAction::triggered, this,&MainWindow::NewDocument);
 
     QAction* open_document = createAction(tr("打开"), ":/icon/icons/打开.png");
     open_document->setShortcut(QKeySequence(QLatin1String("Ctrl+S")));
     pannelStructure->addLargeAction(open_document);
-    connect(open_document, &QAction::triggered, this, [this](bool b) {
-        Q_UNUSED(b);
-        //this->m_edit->append("actSaveion clicked");
-    });
+    connect(open_document, &QAction::triggered, this, &MainWindow::OpenDocument);
 
     
 

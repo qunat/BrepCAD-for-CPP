@@ -25,15 +25,16 @@ WindownsManager::WindownsManager(MainWindow* par)
 int WindownsManager::CreateNewWindown(string WindownName)
 {
 	
-	QString fileName = QFileDialog::getOpenFileName(
+	QString filePath = QFileDialog::getOpenFileName(
 		parent,
 		QString::fromLocal8Bit("选择打开文件"),
 		"c:/",
 		tr("step(*step *stp )"));
 	
-	QStringList fileNameList = fileName.split("/");
-	//qDebug() << fileNameList[fileName.size()-1].toLocal8Bit();
-	fileName = fileNameList[fileNameList.size() - 1];
+	QStringList fileNameList = filePath.split("/");
+	QString fileName = fileNameList[fileNameList.size() - 1];
+	fileNameList = fileName.split(".");
+	fileName = fileNameList[0];
 	WindownName = fileName.toLocal8Bit();
 
 	current_windown = WindownName;
@@ -63,6 +64,8 @@ int WindownsManager::CreateNewWindown(string WindownName)
 	//ribbon->setCurrentIndex(0);
 	//ribbon->updateRibbonGeometry();
 	//this->dockmodeltree->UpdateGeometry();
+	string partname = filePath.toLocal8Bit();
+	parent->DisplayCoreManeger[WindownName]->Read_step_file(partname);
 	
 	return 0;
 }
