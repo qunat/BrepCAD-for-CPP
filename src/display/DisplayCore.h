@@ -5,6 +5,8 @@
 #include<AIS_Trihedron.hxx>
 #include<AIS_Plane.hxx>
 #include<string.h>
+#include <any>
+#include <variant>
 using namespace std;
 
 class shape 
@@ -15,7 +17,7 @@ public:
 	shape(Handle(AIS_Trihedron) aisrihedron);
 	shape(Handle(AIS_Plane) aisplane);
 	~shape();
-	void Value();
+	void * Value();
 
 public:
 	Handle(AIS_Shape) AisShape;

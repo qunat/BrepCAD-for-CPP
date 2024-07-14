@@ -34,6 +34,9 @@
 #include <qmessagebox.h>
 #include <Geom_Axis2Placement.hxx>
 #include <gp.hxx>
+#include <Geom_Plane.hxx>
+#include <Prs3d_LineAspect.hxx>
+#include<Aspect_TypeOfLine.hxx>
 using namespace std;
 
 
@@ -42,6 +45,7 @@ DisplayCore::DisplayCore(OccView*parent)
 {
 	Context =parent->getContext();
 	Displaytriehedron();
+	Displayplane();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
 
@@ -132,12 +136,34 @@ int DisplayCore::Displaytriehedron()
 
 int DisplayCore::Displayplane()
 {	
-	//plane = Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 1, 0))
-	//ais_plane_xz = AIS_Plane(plane, True)
-	//ais_plane_xz.SetColor(Quantity_Color(Quantity_NOC_GRAY))
-	//ais_plane_xz.SetTypeOfSensitivity(Select3D_TOS_INTERIOR)
-	//asp = Prs3d_LineAspect(Quantity_Color(Quantity_NOC_GREEN), 1, 10)
-	//ais_plane_xz.SetAspect(asp)
+	Handle(Geom_Plane)plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 1, 0));
+	Handle(AIS_Plane)ais_plane_xz = new AIS_Plane(plane, true);
+	ais_plane_xz->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	ais_plane_xz->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
+	Handle(Prs3d_LineAspect) asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	ais_plane_xz->SetAspect(asp);
+	Context->Display(ais_plane_xz, 0, 3, true);
+	ShapeManeger["基准面XZ"] = new shape(ais_plane_xz);
+
+	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(1, 0, 0));
+	Handle(AIS_Plane)ais_plane_yz = new AIS_Plane(plane, true);
+	ais_plane_yz->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	ais_plane_yz->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
+	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	ais_plane_yz->SetAspect(asp);
+	Context->Display(ais_plane_yz, 0, 3, true);
+	ShapeManeger["基准面YZ"] = new shape(ais_plane_yz);
+
+	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 0, 1));
+	Handle(AIS_Plane)ais_plane_xy = new AIS_Plane(plane, true);
+	ais_plane_xy->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	ais_plane_xy->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
+	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	asp->SetColor(Quantity_Color(Quantity_NOC_RED));
+	ais_plane_xy->SetAspect(asp);
+	ais_plane_xy->Attributes()->SetWireAspect(asp);
+	Context->Display(ais_plane_xy, 0, 3, true);
+	ShapeManeger["基准面XY"] = new shape(ais_plane_xy);
 	//self.canva._display.Context.Display(ais_plane_xz, True)
 	//self.shape_maneger_core_dict["X基准面"] = ais_plane_xz
 	return 0;
@@ -162,5 +188,10 @@ shape::shape(Handle(AIS_Trihedron) aisrihedron)
 shape::shape(Handle(AIS_Plane) aisplane)
 {
 	AisPlane = aisplane;
+}
+
+void* shape::Value()
+{
+	return NULL;
 }
 
