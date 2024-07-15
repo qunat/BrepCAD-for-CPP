@@ -23,6 +23,12 @@ public:
 	QTabWidget* dock_tabWidget;
 	QWidget* tab_1;
 	QWidget* tab_2;
-	QTreeWidget* ModelTree;
+	QTreeWidget* modeltree;
+	QTreeWidgetItem* history_model_root;
+	QTreeWidgetItem* wsc_root;
+	QTreeWidgetItem* datum_root_X;
+	QTreeWidgetItem* datum_root_Y;
+	QTreeWidgetItem* datum_root_Z;
+
 
 };

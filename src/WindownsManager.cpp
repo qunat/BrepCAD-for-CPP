@@ -58,7 +58,7 @@ int WindownsManager::CreateNewWindown(string WindownName)
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
 		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);
+		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
 	}
 
 	//ribbon->setCurrentIndex(0);
@@ -95,7 +95,7 @@ int WindownsManager::CreateNewWindown()
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
 		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);
+		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
 	}
 	
 	//ribbon->setCurrentIndex(0);
@@ -107,7 +107,7 @@ int WindownsManager::TabwidgetClickedEvent()
 {
 	if (parent->dockmodeltreemap.find(current_windown) == parent->dockmodeltreemap.end() && dock != nullptr)
 	{
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);//modeltree ÇÐ»»
+		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);//modeltree ÇÐ»»
 
 	}
 	return 0;
@@ -118,7 +118,7 @@ int WindownsManager::TabwidgetChangeEvent()
 {	
 
 	current_windown = this->GetCurrentWindown().toLocal8Bit();
-	dock->setWidget(parent->dockmodeltreemap[current_windown]->ModelTree);//modeltree ÇÐ»»
+	dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);//modeltree ÇÐ»»
 	multiwindowstabwidget->updateGeometry();
 	
 	

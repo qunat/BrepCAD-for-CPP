@@ -117,6 +117,9 @@
         <file>icons/backgroud.png</file>
         <file>icons/装配.png</file>
         <file>icons/零件.png</file>
+        <file>icons/plane_xy.png</file>
+        <file>icons/plane_xz.png</file>
+        <file>icons/plane_yz.png</file>
     </qresource>
     <qresource prefix="/gallery-icon">
         <file>icon/gallery/Document-File.svg</file>

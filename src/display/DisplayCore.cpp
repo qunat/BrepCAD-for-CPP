@@ -37,6 +37,7 @@
 #include <Geom_Plane.hxx>
 #include <Prs3d_LineAspect.hxx>
 #include<Aspect_TypeOfLine.hxx>
+#include <Prs3d_PlaneAspect.hxx>
 using namespace std;
 
 
@@ -155,13 +156,14 @@ int DisplayCore::Displayplane()
 	ShapeManeger["基准面YZ"] = new shape(ais_plane_yz);
 
 	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 0, 1));
-	Handle(AIS_Plane)ais_plane_xy = new AIS_Plane(plane, true);
+	Handle(AIS_Plane)ais_plane_xy = new AIS_Plane(plane);
 	ais_plane_xy->SetColor(Quantity_Color(Quantity_NOC_GRAY));
 	ais_plane_xy->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
-	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	//asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	Handle(Prs3d_PlaneAspect) asp1 = new Prs3d_PlaneAspect();
 	asp->SetColor(Quantity_Color(Quantity_NOC_RED));
-	ais_plane_xy->SetAspect(asp);
-	ais_plane_xy->Attributes()->SetWireAspect(asp);
+	//ais_plane_xy->SetAspect(asp);
+	ais_plane_xy->Attributes()->SetLineAspect(asp);
 	Context->Display(ais_plane_xy, 0, 3, true);
 	ShapeManeger["基准面XY"] = new shape(ais_plane_xy);
 	//self.canva._display.Context.Display(ais_plane_xz, True)

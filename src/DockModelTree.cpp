@@ -41,19 +41,49 @@ DockModelTree::DockModelTree(MainWindow* parent)
 }
 void DockModelTree::CreateModelTree()
 {
-	QTreeWidget* modeltree = new QTreeWidget(this->tab_1);
-	ModelTree = modeltree;
-	qDebug() << ModelTree << modeltree;
-	ModelTree->setStyle(QStyleFactory::create("windows"));
-	ModelTree->setColumnCount(2);//设置列数
-	ModelTree->setHeaderLabels(QStringList() << "名称" << "附件" << "最新");//  设置树形控件头部的标题
-	ModelTree->setAlternatingRowColors(	true);
-	ModelTree->setColumnWidth(0,120);
+	modeltree = new QTreeWidget(this->tab_2);
+	//qDebug() << ModelTree << modeltree;
+	modeltree->expandAll();
+	modeltree->setStyle(QStyleFactory::create("windows"));
+	modeltree->setColumnCount(2);//设置列数
+	modeltree->setHeaderLabels(QStringList() << "名称" << "附件" << "最新");//  设置树形控件头部的标题
+	modeltree->setAlternatingRowColors(	true);
+	modeltree->setColumnWidth(0,180);
+	
 
-	QTreeWidgetItem* history_model_root = new QTreeWidgetItem(ModelTree);
+	history_model_root = new QTreeWidgetItem(modeltree);
 	history_model_root->setText(0, "历史模型记录");
 	//history_model_root->setIcon(0, QIcon('sync.ico'));
 	history_model_root->setCheckState(0, Qt::Checked);
+
+	//坐标系
+	wsc_root = new QTreeWidgetItem(history_model_root);
+	wsc_root->setText(0,"坐标系");
+	//wsc_root->setIcon(0, QPixmap(":/icon/icons/装配.png"));
+	wsc_root->setCheckState(0, Qt::Checked);
+
+	//基准面
+	datum_root_X= new QTreeWidgetItem(history_model_root);
+	datum_root_X->setText(0, "X基准平面");
+	datum_root_X->setIcon(0, QPixmap(":/icon/icons/datumplane.png"));
+	datum_root_X->setCheckState(0, Qt::Checked);
+
+	//基准面
+	datum_root_Y = new QTreeWidgetItem(history_model_root);
+	datum_root_Y->setText(0, "Y基准平面");
+	datum_root_Y->setIcon(0, QPixmap(":/icon/icons/datumplane.png"));
+	datum_root_Y->setCheckState(0, Qt::Checked);
+
+	//基准面
+	datum_root_Z = new QTreeWidgetItem(history_model_root);
+	datum_root_Z->setText(0, "Z基准平面");
+	datum_root_Z->setIcon(0, QPixmap(":/icon/icons/datumplane.png"));
+	datum_root_Z->setCheckState(0, Qt::Checked);
+
+	modeltree->expandAll();
+
+	
+
 }
 void DockModelTree::UpdateGeometry()
 {
@@ -63,7 +93,7 @@ void DockModelTree::UpdateGeometry()
 	int dock_height = this->dock_tabWidget->geometry().height();
 	int dock_tabWidget_QTabBar_height= tabBar0->geometry().height();
 	int dock_QTabBar_height= tabBar1->geometry().height();
-	this->ModelTree->setGeometry(0, 0, dock_width,dock_height-dock_tabWidget_QTabBar_height- dock_QTabBar_height);//重行设置模型树大小
+	this->modeltree->setGeometry(0, 0, dock_width,dock_height-dock_tabWidget_QTabBar_height- dock_QTabBar_height);//重行设置模型树大小
 	qDebug()<< this->dock_tabWidget->geometry().height();
 	qDebug() << tabBar0->geometry().height();
 	qDebug() << tabBar1->geometry().height();
