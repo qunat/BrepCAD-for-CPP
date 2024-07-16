@@ -9,7 +9,7 @@ class MainWindow;
 class DockModelTree
 {
 public:
-	DockModelTree(MainWindow*parent);
+	DockModelTree(MainWindow*par);
 	~DockModelTree();
 	void UpdateGeometry();
 	void CreateModelTree();

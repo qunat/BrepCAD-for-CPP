@@ -143,7 +143,7 @@ void OccView::init()
     //myView->SetBackgroundColor(Quantity_NOC_BLACK);
 	//背景渐变色设置
 
-    Standard_CString FileName = "F:\\project\\BrepCAD\\src\\Images\\Cloudy.png";
+    Standard_CString FileName = ".\\Images\\Cloudy.png";
 	myView->SetBgGradientColors(background_1, background_2, Aspect_GFM_VER, Standard_True);
     myView->SetBackgroundImage(FileName,Aspect_FM_STRETCH,  true);
     myView->MustBeResized();

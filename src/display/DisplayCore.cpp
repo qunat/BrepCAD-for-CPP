@@ -38,6 +38,7 @@
 #include <Prs3d_LineAspect.hxx>
 #include<Aspect_TypeOfLine.hxx>
 #include <Prs3d_PlaneAspect.hxx>
+
 using namespace std;
 
 
@@ -139,35 +140,28 @@ int DisplayCore::Displayplane()
 {	
 	Handle(Geom_Plane)plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 1, 0));
 	Handle(AIS_Plane)ais_plane_xz = new AIS_Plane(plane, true);
-	ais_plane_xz->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	Handle(Prs3d_PlaneAspect) plan_asp = new Prs3d_PlaneAspect();
+	plan_asp->SetPlaneLength(500, 500);
+	Handle(Prs3d_LineAspect) line_asp = plan_asp->EdgesAspect();
+	line_asp->SetColor(Quantity_Color(Quantity_NOC_RED));
+	ais_plane_xz->Attributes()->SetPlaneAspect(plan_asp);
 	ais_plane_xz->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
-	Handle(Prs3d_LineAspect) asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
-	ais_plane_xz->SetAspect(asp);
 	Context->Display(ais_plane_xz, 0, 3, true);
 	ShapeManeger["基准面XZ"] = new shape(ais_plane_xz);
 
 	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(1, 0, 0));
 	Handle(AIS_Plane)ais_plane_yz = new AIS_Plane(plane, true);
-	ais_plane_yz->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	ais_plane_yz->Attributes()->SetPlaneAspect(plan_asp);
 	ais_plane_yz->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
-	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
-	ais_plane_yz->SetAspect(asp);
 	Context->Display(ais_plane_yz, 0, 3, true);
 	ShapeManeger["基准面YZ"] = new shape(ais_plane_yz);
 
 	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 0, 1));
 	Handle(AIS_Plane)ais_plane_xy = new AIS_Plane(plane);
-	//ais_plane_xy->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	ais_plane_xy->Attributes()->SetPlaneAspect(plan_asp);
 	ais_plane_xy->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
-	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
-	Handle(Prs3d_PlaneAspect) asp1 = new Prs3d_PlaneAspect();
-	asp->SetColor(Quantity_Color(Quantity_NOC_RED));
-	//ais_plane_xy->SetAspect(asp);
-	ais_plane_xy->Attributes()->SetLineAspect(asp);
 	Context->Display(ais_plane_xy, 0, 3, true);
 	ShapeManeger["基准面XY"] = new shape(ais_plane_xy);
-	//self.canva._display.Context.Display(ais_plane_xz, True)
-	//self.shape_maneger_core_dict["X基准面"] = ais_plane_xz
 	return 0;
 }
 

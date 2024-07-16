@@ -8,17 +8,17 @@
 #include <QDebug>
 #include"GuiManeger.h"
 
-DockModelTree::DockModelTree(MainWindow* parent)
+DockModelTree::DockModelTree(MainWindow* par)
 {	
-	parent = parent;
+	parent = par;
 	int dock_width = 360;
 	dock_tabWidget=new QTabWidget(parent->windownsmanager->dock);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
-	tab_1 = new QWidget();
+	tab_1 = new QWidget(dock_tabWidget);
 	tab_1->setObjectName(QStringLiteral("tab"));
 	dock_tabWidget->addTab(tab_1, QString());
-	tab_2 = new QWidget();
+	tab_2 = new QWidget(dock_tabWidget);
 	tab_2->setObjectName(QStringLiteral("tab_2"));
 	dock_tabWidget->setAttribute(Qt::WA_StyledBackground);
 	dock_tabWidget->setIconSize(QSize(20, 20));

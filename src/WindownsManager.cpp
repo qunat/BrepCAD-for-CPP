@@ -48,7 +48,7 @@ int WindownsManager::CreateNewWindown(string WindownName)
 	int dock_width = 300;
 	if (dock == nullptr)
 	{
-		dock = new QDockWidget(QString::fromLocal8Bit("组合浏览器"), parent);
+		dock = new QDockWidget(QString::fromLocal8Bit("组合浏览器"), parent->par);
 		dock->setMinimumSize(QSize(dock_width, 360));
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
 		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
