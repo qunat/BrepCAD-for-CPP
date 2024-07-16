@@ -157,9 +157,9 @@ int DisplayCore::Displayplane()
 
 	plane = new Geom_Plane(gp_Pnt(0.0, 0.0, 0.0), gp_Dir(0, 0, 1));
 	Handle(AIS_Plane)ais_plane_xy = new AIS_Plane(plane);
-	ais_plane_xy->SetColor(Quantity_Color(Quantity_NOC_GRAY));
+	//ais_plane_xy->SetColor(Quantity_Color(Quantity_NOC_GRAY));
 	ais_plane_xy->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
-	//asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
+	asp = new Prs3d_LineAspect(Quantity_Color(Quantity_NOC_RED), Aspect_TOL_SOLID, 10);
 	Handle(Prs3d_PlaneAspect) asp1 = new Prs3d_PlaneAspect();
 	asp->SetColor(Quantity_Color(Quantity_NOC_RED));
 	//ais_plane_xy->SetAspect(asp);

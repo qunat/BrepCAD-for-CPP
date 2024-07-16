@@ -1,2 +1,7 @@
 ﻿  Generate moc_predefs.h
-  BrepCAD.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\debug\BrepCAD.exe
+  DisplayCore.cpp
+  class any is only available with C++17 or later.
+  class template variant is only available with C++17 or later.
+f:\project\brepcad\src\display\displaycore.cpp(54): warning C4100: “theToUpdateViewer”: 未引用的形参
+f:\project\brepcad\src\display\displaycore.cpp(54): warning C4100: “transparency”: 未引用的形参
+  BrepCAD.vcxproj -> F:\project\BrepCAD\src\debug\BrepCAD.exe

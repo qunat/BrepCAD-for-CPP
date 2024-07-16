@@ -143,8 +143,9 @@ void OccView::init()
     //myView->SetBackgroundColor(Quantity_NOC_BLACK);
 	//背景渐变色设置
 
+    Standard_CString FileName = "F:\\project\\BrepCAD\\src\\Images\\Cloudy.png";
 	myView->SetBgGradientColors(background_1, background_2, Aspect_GFM_VER, Standard_True);
-    myView->SetBackgroundImage("F:\\宁波莱布尼茨项目\\BrepCAD\\src\\Images\\Cloudy.png",Aspect_FM_STRETCH,  true);
+    myView->SetBackgroundImage(FileName,Aspect_FM_STRETCH,  true);
     myView->MustBeResized();
     myView->TriedronDisplay(Aspect_TOTP_LEFT_LOWER, Quantity_NOC_GOLD, 0.2, V3d_ZBUFFER);
 
