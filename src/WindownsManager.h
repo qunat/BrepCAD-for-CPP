@@ -20,7 +20,6 @@ public:
 
 public:
 	MainWindow* parent;
-	QDockWidget * dock=nullptr;
 	list<string> windowns_id_list{1};
 	map<string, PartSolution*> windowns_name;
 	QTabWidget *multiwindowstabwidget;

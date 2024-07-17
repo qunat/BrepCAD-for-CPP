@@ -46,19 +46,20 @@ int WindownsManager::CreateNewWindown(string WindownName)
 	parent->DisplayCoreManeger[WindownName] = new DisplayCore(windowns_name[WindownName]->myOccView);
 
 	int dock_width = 300;
-	if (dock == nullptr)
+	if (parent->dock == nullptr)
 	{
-		dock = new QDockWidget(QString::fromLocal8Bit("×éºÏä¯ÀÀÆ÷"), parent->par);
-		dock->setMinimumSize(QSize(dock_width, 360));
+		parent->dock = new QDockWidget(QString::fromLocal8Bit("×éºÏä¯ÀÀÆ÷"), parent->par);
+		parent->dock->setMinimumSize(QSize(dock_width, 360));
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
-		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
+		parent->dock->updateGeometry();
 	}
 
 	else
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
-		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
 	}
 
 	//ribbon->setCurrentIndex(0);
@@ -83,19 +84,19 @@ int WindownsManager::CreateNewWindown()
 	parent->DisplayCoreManeger[WindownName] = new DisplayCore(windowns_name[WindownName]->myOccView);
 
 	int dock_width = 300;
-	if (dock == nullptr)
+	if (parent->dock == nullptr)
 	{
-		dock = new QDockWidget(QString::fromLocal8Bit("×éºÏä¯ÀÀÆ÷"), parent);
-		dock->setMinimumSize(QSize(dock_width, 360));
+		parent->dock = new QDockWidget(QString::fromLocal8Bit("×éºÏä¯ÀÀÆ÷"), parent->par);
+		parent->dock->setMinimumSize(QSize(dock_width, 360));
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
-		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
 	}
 
 	else
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
-		parent->addDockWidget(Qt::LeftDockWidgetArea, dock);
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
+		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);
 	}
 	
 	//ribbon->setCurrentIndex(0);
@@ -105,9 +106,10 @@ int WindownsManager::CreateNewWindown()
 }
 int WindownsManager::TabwidgetClickedEvent()
 {
-	if (parent->dockmodeltreemap.find(current_windown) == parent->dockmodeltreemap.end() && dock != nullptr)
+	if (parent->dockmodeltreemap.find(current_windown) == parent->dockmodeltreemap.end() && parent->dock != nullptr)
 	{
-		dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);//modeltree ÇĞ»»
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);//modeltree ÇĞ»»
+		parent->dock->updateGeometry();
 
 	}
 	return 0;
@@ -118,8 +120,9 @@ int WindownsManager::TabwidgetChangeEvent()
 {	
 
 	current_windown = this->GetCurrentWindown().toLocal8Bit();
-	dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);//modeltree ÇĞ»»
+	parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);//modeltree ÇĞ»»
 	multiwindowstabwidget->updateGeometry();
+	parent->dock->updateGeometry();
 	
 	
 	return 0;

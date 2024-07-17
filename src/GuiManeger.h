@@ -96,6 +96,7 @@ public:
     QTabWidget* MultiWindowsTabWidget;
     WindownsManager* windownsmanager;
 	DockModelTree * dockmodeltree;
+    QDockWidget* dock = nullptr;
 	map <string, DockModelTree *>dockmodeltreemap;
     map <string, DisplayCore*>DisplayCoreManeger;
 	int initializationsignal{0};//初始化界面完成信号

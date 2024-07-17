@@ -12,22 +12,23 @@ DockModelTree::DockModelTree(MainWindow* par)
 {	
 	parent = par;
 	int dock_width = 360;
-	dock_tabWidget=new QTabWidget(parent->windownsmanager->dock);
+	dock_tabWidget=new QTabWidget(parent->dock);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
-	tab_1 = new QWidget(dock_tabWidget);
-	tab_1->setObjectName(QStringLiteral("tab"));
-	dock_tabWidget->addTab(tab_1, QString());
-	tab_2 = new QWidget(dock_tabWidget);
-	tab_2->setObjectName(QStringLiteral("tab_2"));
+	part_tab = new QWidget(dock_tabWidget);
+	part_tab->setObjectName(QStringLiteral("part_tab"));
+	dock_tabWidget->addTab(part_tab, QString());
+	assemble_tab = new QWidget(dock_tabWidget);
+	assemble_tab->setObjectName(QStringLiteral("assemble_tab"));
 	dock_tabWidget->setAttribute(Qt::WA_StyledBackground);
 	dock_tabWidget->setIconSize(QSize(20, 20));
-	dock_tabWidget->addTab(tab_2, QString());
+	dock_tabWidget->addTab(assemble_tab, QString());
 	dock_tabWidget->setTabText(0, "");
 	dock_tabWidget->setTabText(1, "");
 	dock_tabWidget->setGeometry(QRect(0,30, dock_width, 864));
 	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
 	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));
+	dock_tabWidget->show();
 	this->CreateModelTree();
 
 	/*设置qss*/
@@ -41,7 +42,7 @@ DockModelTree::DockModelTree(MainWindow* par)
 }
 void DockModelTree::CreateModelTree()
 {
-	modeltree = new QTreeWidget(this->tab_2);
+	modeltree = new QTreeWidget(this->part_tab);
 	//qDebug() << ModelTree << modeltree;
 	modeltree->expandAll();
 	modeltree->setStyle(QStyleFactory::create("windows"));
@@ -87,16 +88,16 @@ void DockModelTree::CreateModelTree()
 }
 void DockModelTree::UpdateGeometry()
 {
-	QTabBar* tabBar0 = this->dock_tabWidget->findChild<QTabBar*>();//获取tavwidge的标题
-	QTabBar* tabBar1 = dock->findChild<QTabBar*>();//获取dock的标题
-	int dock_width = this->dock_tabWidget->geometry().width();
-	int dock_height = this->dock_tabWidget->geometry().height();
-	int dock_tabWidget_QTabBar_height= tabBar0->geometry().height();
-	int dock_QTabBar_height= tabBar1->geometry().height();
-	this->modeltree->setGeometry(0, 0, dock_width,dock_height-dock_tabWidget_QTabBar_height- dock_QTabBar_height);//重行设置模型树大小
-	qDebug()<< this->dock_tabWidget->geometry().height();
-	qDebug() << tabBar0->geometry().height();
-	qDebug() << tabBar1->geometry().height();
+	//QTabBar* tabBar0 = this->dock_tabWidget->findChild<QTabBar*>();//获取tavwidge的标题
+	//QTabBar* tabBar1 = dock->findChild<QTabBar*>();//获取dock的标题
+	//int dock_width = this->dock_tabWidget->geometry().width();
+	//int dock_height = this->dock_tabWidget->geometry().height();
+	//int dock_tabWidget_QTabBar_height= tabBar0->geometry().height();
+	//int dock_QTabBar_height= tabBar1->geometry().height();
+	//this->modeltree->setGeometry(0, 0, dock_width,dock_height-dock_tabWidget_QTabBar_height- dock_QTabBar_height);//重行设置模型树大小
+	//qDebug()<< this->dock_tabWidget->geometry().height();
+	//qDebug() << tabBar0->geometry().height();
+	//qDebug() << tabBar1->geometry().height();
 	//dock_tabWidget->setGeometry(0, 30, width, height);
 	
 

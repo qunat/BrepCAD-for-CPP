@@ -19,10 +19,10 @@ public slots:
 	}
 public:
 	MainWindow* parent;
-	QDockWidget  *dock;
+	//QDockWidget  *dock;
 	QTabWidget* dock_tabWidget;
-	QWidget* tab_1;
-	QWidget* tab_2;
+	QWidget* part_tab;
+	QWidget* assemble_tab;
 	QTreeWidget* modeltree;
 	QTreeWidgetItem* history_model_root;
 	QTreeWidgetItem* wsc_root;

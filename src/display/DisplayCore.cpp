@@ -130,6 +130,7 @@ int DisplayCore::Displaytriehedron()
 	triehedron->SetXAxisColor(Quantity_Color(Quantity_NOC_RED));
 	triehedron->SetYAxisColor(Quantity_Color(Quantity_NOC_GREEN));
 	triehedron->SetAxisColor(Quantity_Color(Quantity_NOC_BLUE1));
+	triehedron->SetTextColor(Quantity_Color(Quantity_NOC_DARKGOLDENROD));
 	Context->Display(triehedron, 0, 3, true);
 	ShapeManeger["坐标系"] = new shape(triehedron);
 	//Handle(drawer) = triehedron.Attributes();
@@ -143,7 +144,7 @@ int DisplayCore::Displayplane()
 	Handle(Prs3d_PlaneAspect) plan_asp = new Prs3d_PlaneAspect();
 	plan_asp->SetPlaneLength(500, 500);
 	Handle(Prs3d_LineAspect) line_asp = plan_asp->EdgesAspect();
-	line_asp->SetColor(Quantity_Color(Quantity_NOC_RED));
+	line_asp->SetColor(Quantity_Color(Quantity_NOC_GREEN));
 	ais_plane_xz->Attributes()->SetPlaneAspect(plan_asp);
 	ais_plane_xz->SetTypeOfSensitivity(Select3D_TOS_INTERIOR);
 	Context->Display(ais_plane_xz, 0, 3, true);
