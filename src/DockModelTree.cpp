@@ -11,7 +11,6 @@
 DockModelTree::DockModelTree(MainWindow* par)
 {	
 	parent = par;
-	int dock_width = 360;
 	dock_tabWidget=new QTabWidget(parent->dock);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
@@ -25,10 +24,11 @@ DockModelTree::DockModelTree(MainWindow* par)
 	dock_tabWidget->addTab(assemble_tab, QString());
 	dock_tabWidget->setTabText(0, "");
 	dock_tabWidget->setTabText(1, "");
-	dock_tabWidget->setGeometry(QRect(0,30, dock_width, 864));
+	int height = parent->dock->height();
+	dock_tabWidget->setGeometry(QRect(0,0, parent->dock->width(), parent->dock->height()));
 	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
 	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));
-	dock_tabWidget->show();
+	//dock_tabWidget->show();
 	this->CreateModelTree();
 
 	/*设置qss*/
@@ -43,13 +43,16 @@ DockModelTree::DockModelTree(MainWindow* par)
 void DockModelTree::CreateModelTree()
 {
 	modeltree = new QTreeWidget(this->part_tab);
+	int width = dock_tabWidget->width();
+	int height = dock_tabWidget->height();
+	modeltree->setGeometry(0, 0, dock_tabWidget->width(), dock_tabWidget->height());
 	//qDebug() << ModelTree << modeltree;
 	modeltree->expandAll();
 	modeltree->setStyle(QStyleFactory::create("windows"));
 	modeltree->setColumnCount(2);//设置列数
 	modeltree->setHeaderLabels(QStringList() << "名称" << "附件" << "最新");//  设置树形控件头部的标题
 	modeltree->setAlternatingRowColors(	true);
-	modeltree->setColumnWidth(0,180);
+	modeltree->setColumnWidth(0,150);
 	
 
 	history_model_root = new QTreeWidgetItem(modeltree);
@@ -98,8 +101,24 @@ void DockModelTree::UpdateGeometry()
 	//qDebug()<< this->dock_tabWidget->geometry().height();
 	//qDebug() << tabBar0->geometry().height();
 	//qDebug() << tabBar1->geometry().height();
-	//dock_tabWidget->setGeometry(0, 30, width, height);
-	
+	//dock_tabWidget->setGeometry(0, 30, width, height)
+	//part_tab->setObjectName(QStringLiteral("part_tab"));
+	/*
+	dock_tabWidget->addTab(part_tab, QString());
+	assemble_tab->setObjectName(QStringLiteral("assemble_tab"));;
+	dock_tabWidget->addTab(assemble_tab, QString());
+	dock_tabWidget->setTabText(0, "");
+	dock_tabWidget->setTabText(1, "");;
+	dock_tabWidget->setAttribute(Qt::WA_StyledBackground);
+	dock_tabWidget->setIconSize(QSize(20, 20));
+	dock_tabWidget->addTab(assemble_tab, QString());
+	dock_tabWidget->setTabText(0, "");
+	dock_tabWidget->setTabText(1, "");
+	int height = parent->dock->height();
+	dock_tabWidget->setGeometry(QRect(0, 0, parent->dock->width(), parent->dock->height()));
+	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
+	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));
+	*/
 
 
 }

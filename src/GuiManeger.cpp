@@ -69,11 +69,6 @@ MainWindow::MainWindow(QWidget* par) : SARibbonMainWindow(par), m_customizeWidge
     setCentralWidget(m_edit);
     setStatusBar(new QStatusBar());
 
-	//建立显示零件的窗口
-	//myOccView = new OccView(this);
-	//myOccView->reset();
-    //myOccView->show();
-    //建立左侧dock 模型树
     MultiWindowsTabWidget = new QTabWidget(this);
     myRibbonManeger = new RibbonManeger();
     windownsmanager = new WindownsManager(this);
