@@ -26,8 +26,8 @@ DockModelTree::DockModelTree(MainWindow* par)
 	dock_tabWidget->addTab(assemble_tab, QString());
 	dock_tabWidget->setTabText(0, "");
 	dock_tabWidget->setTabText(1, "");
-	int height = 837;
-	int width = 500;
+	int height = parent->windown_height - parent->ribbonbar_height-parent->statusBar()->geometry().height() - 48;//dock_tabWidget height 
+	int width = 500;//dock_tabWidget width
 	dock_tabWidget->setGeometry(QRect(0,0, width, height));
 	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
 	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));

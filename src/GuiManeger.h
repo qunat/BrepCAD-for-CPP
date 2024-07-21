@@ -85,12 +85,11 @@ private:
     void  NewDocument();
     void  OpenDocument();
     void  CreateRibbon();
-    SARibbonBar* ribbon;
     std::map<std::string, SARibbonCategory*>CategoryPageMap;
     //std::map<std::string, PartSolution*>formDoc;
     
-
 public:
+    SARibbonBar* ribbon;
     void  UpdateGeometry();
     PartSolution* formDoc;
     QTabWidget* MultiWindowsTabWidget;
@@ -100,6 +99,13 @@ public:
 	map <string, DockModelTree *>dockmodeltreemap;
     map <string, DisplayCore*>DisplayCoreManeger;
 	int initializationsignal{0};//初始化界面完成信号
+public:
+    //geometrey parameter
+    int ribbonbar_height;
+    int statusbar_height;
+    int windown_height;
+    
+
 public slots:
     void mySlot();
 };

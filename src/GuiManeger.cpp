@@ -177,10 +177,14 @@ void MainWindow::InitWindow()
     setWindowIcon(QIcon(":/icon/icon/SA.svg"));
     connect(new_document, &QAction::triggered, this, &MainWindow::NewDocument);
     connect(open_document, &QAction::triggered, this, &MainWindow::OpenDocument);
-    int asd=ribbon->geometry().width();
+
+    
 }
 void MainWindow::NewDocument()
 {
+    //calculate geomnetry
+    ribbonbar_height = ribbon->geometry().height();
+    windown_height = this->geometry().height();
 
     //移除初始化界面的panel
     ribbon->removeCategory(CategoryPageMap["Init_home_page"]);
