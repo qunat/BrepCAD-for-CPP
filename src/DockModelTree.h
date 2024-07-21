@@ -4,6 +4,7 @@
 #include <QTreeWidget>
 #include <QObject>
 #include <QDebug>
+#include <QScrollArea>
 class MainWindow;
 
 class DockModelTree
@@ -21,6 +22,7 @@ public:
 	MainWindow* parent;
 	//QDockWidget  *dock;
 	QTabWidget* dock_tabWidget;
+	QScrollArea* scroll;
 	QWidget* part_tab;
 	QWidget* assemble_tab;
 	QTreeWidget* modeltree;

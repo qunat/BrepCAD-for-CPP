@@ -17,7 +17,7 @@ WindownsManager::WindownsManager(MainWindow* par)
 	parent = par;
 	multiwindowstabwidget = par->MultiWindowsTabWidget;
 	connect(multiwindowstabwidget, SIGNAL(currentChanged(int)), this, SLOT(TabwidgetChangeEvent()));
-	connect(multiwindowstabwidget, SIGNAL(tabBarClicked(int)), this, SLOT(TabwidgetClickedEvent()));
+	//connect(multiwindowstabwidget, SIGNAL(tabBarClicked(int)), this, SLOT(TabwidgetClickedEvent()));
 
 	
 }
@@ -59,7 +59,7 @@ int WindownsManager::CreateNewWindown(string WindownName)
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
 		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
-		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->modeltree);
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->scroll);
 	}
 
 	//ribbon->setCurrentIndex(0);
@@ -96,7 +96,7 @@ int WindownsManager::CreateNewWindown()
 	{
 		parent->dockmodeltreemap[current_windown] = new DockModelTree(parent);
 		parent->addDockWidget(Qt::LeftDockWidgetArea, parent->dock);
-		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->scroll);
 	}
 	
 	//ribbon->setCurrentIndex(0);
@@ -108,7 +108,7 @@ int WindownsManager::TabwidgetClickedEvent()
 {
 	if (parent->dockmodeltreemap.find(current_windown) == parent->dockmodeltreemap.end() && parent->dock != nullptr)
 	{
-		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);//modeltree ÇÐ»»
+		parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->scroll);//modeltree ÇÐ»»
 		parent->dock->updateGeometry();
 
 	}
@@ -120,7 +120,8 @@ int WindownsManager::TabwidgetChangeEvent()
 {	
 
 	current_windown = this->GetCurrentWindown().toLocal8Bit();
-	parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->dock_tabWidget);//modeltree ÇÐ»»
+	parent->dock->setWidget(parent->dockmodeltreemap[current_windown]->scroll);//modeltree ÇÐ»»
+	parent->dockmodeltreemap[current_windown]->scroll->setMaximumWidth(299);
 	multiwindowstabwidget->updateGeometry();
 	parent->dock->updateGeometry();
 	

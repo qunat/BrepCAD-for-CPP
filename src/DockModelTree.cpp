@@ -12,6 +12,8 @@ DockModelTree::DockModelTree(MainWindow* par)
 {	
 	parent = par;
 	dock_tabWidget=new QTabWidget(parent->dock);
+	scroll = new QScrollArea();// 创建滚动类
+	scroll->setMaximumWidth(299);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
 	part_tab = new QWidget(dock_tabWidget);
@@ -24,10 +26,12 @@ DockModelTree::DockModelTree(MainWindow* par)
 	dock_tabWidget->addTab(assemble_tab, QString());
 	dock_tabWidget->setTabText(0, "");
 	dock_tabWidget->setTabText(1, "");
-	int height = parent->dock->height();
-	dock_tabWidget->setGeometry(QRect(0,0, parent->dock->width(), parent->dock->height()));
+	int height = 837;
+	int width = 500;
+	dock_tabWidget->setGeometry(QRect(0,0, width, height));
 	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
 	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));
+	scroll->setWidget(dock_tabWidget);
 	//dock_tabWidget->show();
 	this->CreateModelTree();
 
