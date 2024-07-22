@@ -48,6 +48,7 @@ DisplayCore::DisplayCore(OccView*parent)
 	Context =parent->getContext();
 	Displaytriehedron();
 	Displayplane();
+	DisplayCube();
 	TopoDS_Shape aTopoBox = BRepPrimAPI_MakeBox(100.0, 100.0, 100.0).Shape();
 	Quantity_Color color(0.5,0.6,0.7, Quantity_TOC_RGB) ;
 
@@ -166,6 +167,15 @@ int DisplayCore::Displayplane()
 	return 0;
 }
 
+int DisplayCore::DisplayCube()
+{	
+	Handle(AIS_ViewCube) aisviewcube= new AIS_ViewCube();
+	ShapeManeger["cube"] = new shape(aisviewcube);
+	ShapeManeger["cube"]->AISViewCube->SetTransformPersistence(Graphic3d_TMF_TriedronPers, gp_Pnt(1, 1, 100));
+	Context->Display(ShapeManeger["cube"]->AISViewCube, true);
+	return 0;
+}
+
 
 
 
@@ -186,6 +196,13 @@ shape::shape(Handle(AIS_Plane) aisplane)
 {
 	AisPlane = aisplane;
 }
+
+shape::shape(Handle(AIS_ViewCube) aisviewcube)
+{
+
+	AISViewCube = aisviewcube;
+}
+
 
 void* shape::Value()
 {

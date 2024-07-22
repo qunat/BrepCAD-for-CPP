@@ -118,7 +118,7 @@ void OccView::init()
 
     myView->SetWindow(wind);
     if (!wind->IsMapped()) wind->Map();
-
+    //myView->SetProj(V3d_Xpos);//设置视图
     // Create AISInteractiveContext
     myContext = new AIS_InteractiveContext(myViewer);
 
@@ -498,4 +498,46 @@ void OccView::panByMiddleButton( const QPoint& thePoint )
 void OccView::mySlot()
 {
     qDebug() << "The value is:";
+}
+
+int OccView::View_Top()
+{
+    myView->SetProj(V3d_Zpos);
+    return 0;
+}
+
+int OccView::View_Bottom()
+{
+    myView->SetProj(V3d_Zneg);
+    return 0;
+}
+
+int OccView::View_Left()
+{
+    myView->SetProj(V3d_Xneg);
+    return 0;
+}
+
+int OccView::View_Right()
+{
+    myView->SetProj(V3d_Xpos);
+    return 0;
+}
+
+int OccView::View_Front()
+{
+    myView->SetProj(V3d_Yneg);
+    return 0;
+}
+
+int OccView::View_Rear()
+{
+    myView->SetProj(V3d_Ypos);
+    return 0;
+}
+
+int OccView::View_Iso()
+{
+    myView->SetProj(V3d_XposYnegZpos);
+    return 0;
 }

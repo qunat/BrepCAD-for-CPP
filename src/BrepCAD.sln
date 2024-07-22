@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.33801.198
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SARibbonBar", "SARibbonBar\SARibbonBar.vcxproj", "{49145192-F8FF-3F8B-A820-25370479334A}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Module", "Module\Module.vcxproj", "{71EAE116-D66F-43AC-88E4-9ACF4B1368F9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BrepCAD", "BrepCAD.vcxproj", "{E324E7F6-938E-3820-84FE-F0E35275C4B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sketcher", "Sketcher\Sketcher.vcxproj", "{9851900D-6866-45E2-A3B2-5EE034A3028B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,14 @@ Global
 		{E324E7F6-938E-3820-84FE-F0E35275C4B1}.Release|x64.ActiveCfg = Release|x64
 		{E324E7F6-938E-3820-84FE-F0E35275C4B1}.Release|x64.Build.0 = Release|x64
 		{E324E7F6-938E-3820-84FE-F0E35275C4B1}.Release|x86.ActiveCfg = Release|x64
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Debug|x64.ActiveCfg = Debug|x64
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Debug|x64.Build.0 = Debug|x64
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Debug|x86.ActiveCfg = Debug|Win32
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Debug|x86.Build.0 = Debug|Win32
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Release|x64.ActiveCfg = Release|x64
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Release|x64.Build.0 = Release|x64
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Release|x86.ActiveCfg = Release|Win32
+		{9851900D-6866-45E2-A3B2-5EE034A3028B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

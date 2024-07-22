@@ -1,4 +1,4 @@
-﻿#include "GuiManeger.h"
+﻿#include "GuiManager.h"
 #include <QApplication>
 #include <QFile>
 #include <QTextEdit>
@@ -38,7 +38,7 @@
 #include <display/DisplayCore.h>
 #include <chrono>
 #include <iostream>
-#include"RibbonManeger.h"
+#include"RibbonManager.h"
 #include"DockModelTree.h"
 #include<QScreen>
 #include<map>

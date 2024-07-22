@@ -1,8 +1,8 @@
-#include"RibbonManeger.h"
+#include"RibbonManager.h"
 #include <qfile.h>
 #include <fstream>
 #include<QtCore/qfiledevice.h>
-#include "GuiManeger.h"
+#include "GuiManager.h"
 #include <QApplication>
 #include <QFile>
 #include <QTextEdit>
@@ -39,7 +39,7 @@
 #include <QLabel>
 #include "SAFramelessHelper.h"
 #include <occView.h>
-#include <RibbonManeger.h>
+#include <RibbonManager.h>
 #include <chrono>
 #include <iostream>
 using namespace std;

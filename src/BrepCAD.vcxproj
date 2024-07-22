@@ -14,7 +14,7 @@
     <ProjectGuid>{E324E7F6-938E-3820-84FE-F0E35275C4B1}</ProjectGuid>
     <RootNamespace>SARibbonMainWindowExample</RootNamespace>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.22000.0</WindowsTargetPlatformMinVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
     <ProjectName>BrepCAD</ProjectName>
@@ -178,14 +178,14 @@
   <ItemGroup>
     <ClCompile Include="display\DisplayCore.cpp" />
     <ClCompile Include="DockModelTree.cpp" />
-    <ClCompile Include="GuiManeger.cpp" />
+    <ClCompile Include="GuiManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PartSolution.cpp" />
-    <ClCompile Include="RibbonManeger.cpp" />
+    <ClCompile Include="RibbonManager.cpp" />
     <ClCompile Include="WindownsManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="GuiManeger.h" />
+    <QtMoc Include="GuiManager.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
@@ -214,7 +214,7 @@
     <ClInclude Include="DockModelTree.h" />
     <QtMoc Include="WindownsManager.h" />
     <QtMoc Include="PartSolution.h" />
-    <ClInclude Include="RibbonManeger.h" />
+    <ClInclude Include="RibbonManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Qss\docktawidget.qss" />

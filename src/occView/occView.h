@@ -122,6 +122,14 @@ private:
 
     //! rubber rectangle for the mouse selection.
     QRubberBand* myRectBand;
+public:
+    int View_Top();
+    int View_Bottom();
+    int View_Left();
+    int View_Right();
+    int View_Front();
+    int View_Rear();
+    int View_Iso();
 
 public :
     double zoom_factor;

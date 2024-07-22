@@ -6,7 +6,7 @@
 #include <QtWidgets>
 #include <QStyleFactory>
 #include <QDebug>
-#include"GuiManeger.h"
+#include"GuiManager.h"
 
 DockModelTree::DockModelTree(MainWindow* par)
 {	

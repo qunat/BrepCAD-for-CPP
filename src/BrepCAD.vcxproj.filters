@@ -40,10 +40,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GuiManeger.cpp">
+    <ClCompile Include="GuiManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RibbonManeger.cpp">
+    <ClCompile Include="RibbonManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="display\DisplayCore.cpp">
@@ -73,7 +73,7 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="GuiManeger.h">
+    <QtMoc Include="GuiManager.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="PartSolution.h">
@@ -84,7 +84,7 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RibbonManeger.h">
+    <ClInclude Include="RibbonManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="display\DisplayCore.h">

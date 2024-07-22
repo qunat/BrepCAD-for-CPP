@@ -2,7 +2,7 @@
 #include <string>
 #include<QString>
 #include<qobject.h>
-#include<GuiManeger.h>
+#include<GuiManager.h>
 #include"DockModelTree.h"
 #include <QDockWidget>
 #include<Qstring>
