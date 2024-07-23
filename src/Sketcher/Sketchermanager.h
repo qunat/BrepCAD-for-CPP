@@ -1,10 +1,12 @@
 #pragma once
 #include"../GuiManager.h"
 #include"../WindownsManager.h"
+#define DLLEXPORT __declspec(dllexport)
 
 class MainWindow;
-class Sketchermanager
+class DLLEXPORT Sketchermanager 
 {
+	
 public:
 	Sketchermanager(MainWindow*par);
 	Sketchermanager();
