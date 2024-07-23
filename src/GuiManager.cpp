@@ -45,6 +45,8 @@
 #include <PartSolution.h>
 #include <QDebug>
 #include"WindownsManager.h"
+#include"./Sketcher/Sketchermanager.h"
+
 #define PRINT_COST_START()                                                                                             \
     QElapsedTimer __TMP_COST;                                                                                          \
     __TMP_COST.start();                                                                                                \
@@ -72,6 +74,7 @@ MainWindow::MainWindow(QWidget* par) : SARibbonMainWindow(par), m_customizeWidge
     MultiWindowsTabWidget = new QTabWidget(this);
     myRibbonManeger = new RibbonManeger();
     windownsmanager = new WindownsManager(this);
+    sketchermanager = new Sketchermanager(this);
     MultiWindowsTabWidget->hide();
     this->InitWindow();
     
@@ -82,6 +85,7 @@ void MainWindow::InitWindow()
 {
     PRINT_COST_START();
     ribbon = ribbonBar();
+    
     //通过setContentsMargins设置ribbon四周的间距
     ribbon->setContentsMargins(0.0, 0, 0.0, 0);
     //设置applicationButton
@@ -182,6 +186,7 @@ void MainWindow::InitWindow()
 }
 void MainWindow::NewDocument()
 {
+    
     //calculate geomnetry
     ribbonbar_height = ribbon->geometry().height();
     windown_height = this->geometry().height();
@@ -200,6 +205,7 @@ void MainWindow::NewDocument()
     MultiWindowsTabWidget->addTab(windownsmanager->windowns_name[windownsmanager->current_windown], winwownname);
 	MultiWindowsTabWidget->setCurrentIndex(windownsmanager->windowns_name.size()-1);//设置新建窗口为当前的tabwidget
     CreateRibbon();
+    // Create skecther
 
     
 }
@@ -325,6 +331,10 @@ void MainWindow::CreateRibbon()
     ribbon->setCurrentIndex(2);
     ribbon->setCurrentIndex(0);
     ribbon->updateRibbonGeometry();
+}
+void MainWindow::NewSketch()
+{
+    sketchermanager->Showgui();
 }
 void  MainWindow::mySlot()
 {
@@ -559,10 +569,8 @@ void MainWindow::createCategoryMain(SARibbonCategory* page)
     QAction* sketch = createAction(tr("草图"), ":/icon/icons/草绘(1).png");
     sketch->setShortcut(QKeySequence(QLatin1String("Ctrl+S")));
     pannelStructure->addLargeAction(sketch);
-    connect(sketch, &QAction::triggered, this, [this](bool b) {
-        Q_UNUSED(b);
+    connect(sketch, &QAction::triggered, this, &MainWindow::NewSketch);
         //this->m_edit->append("actSaveion clicked");
-    });
 
 
     SARibbonPannel* pannelBase = page->addPannel(("基本"));

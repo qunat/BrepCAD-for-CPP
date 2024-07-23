@@ -7,6 +7,7 @@
 #include"WindownsManager.h"
 #include<Qstring>
 #include"display/DisplayCore.h"
+#include"./Sketcher/Sketchermanager.h"
 
 class SARibbonCategory;
 class SARibbonContextCategory;
@@ -19,6 +20,7 @@ class DockModelTree;
 class OccView;
 class RibbonManeger;
 class WindownsManager;
+class Sketchermanager;
 
 class MainWindow : public SARibbonMainWindow
 {
@@ -85,6 +87,7 @@ private:
     void  NewDocument();
     void  OpenDocument();
     void  CreateRibbon();
+    void  NewSketch();
     std::map<std::string, SARibbonCategory*>CategoryPageMap;
     //std::map<std::string, PartSolution*>formDoc;
     
@@ -94,6 +97,7 @@ public:
     PartSolution* formDoc;
     QTabWidget* MultiWindowsTabWidget;
     WindownsManager* windownsmanager;
+    Sketchermanager* sketchermanager;
 	DockModelTree * dockmodeltree;
     QDockWidget* dock = nullptr;
 	map <string, DockModelTree *>dockmodeltreemap;

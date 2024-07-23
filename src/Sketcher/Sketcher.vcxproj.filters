@@ -15,66 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="display\DisplayCore.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DockModelTree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="GuiManeger.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="PartSolution.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="RibbonManeger.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="WindownsManager.cpp">
+    <ClCompile Include="Sketchermanager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="display\DisplayCore.h">
+    <ClInclude Include="Sketchermanager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DockModelTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="RibbonManeger.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="release\moc_predefs.h.cbt">
-      <Filter>资源文件</Filter>
-    </CustomBuild>
-    <CustomBuild Include="debug\moc_predefs.h.cbt">
-      <Filter>资源文件</Filter>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="GuiManeger.h">
-      <Filter>头文件</Filter>
-    </QtMoc>
-    <QtMoc Include="WindownsManager.h">
-      <Filter>头文件</Filter>
-    </QtMoc>
-    <QtMoc Include="PartSolution.h">
-      <Filter>头文件</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Qss\docktawidget.qss">
-      <Filter>资源文件</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="saribbonresouce.qrc">
-      <Filter>资源文件</Filter>
-    </QtRcc>
   </ItemGroup>
 </Project>

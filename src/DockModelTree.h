@@ -25,6 +25,7 @@ public:
 	QScrollArea* scroll;
 	QWidget* part_tab;
 	QWidget* assemble_tab;
+	QWidget* properymanager_tab;
 	QTreeWidget* modeltree;
 	QTreeWidgetItem* history_model_root;
 	QTreeWidgetItem* wsc_root;

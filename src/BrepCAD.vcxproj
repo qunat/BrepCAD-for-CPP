@@ -148,8 +148,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>shell32.lib;SARibbonBard.lib;TKMath.lib;TKG3d.lib;TKBRep.lib;TKGeomBase.lib;TKGeomAlgo.lib;TKTopAlgo.lib;TKPrim.lib;TKBO.lib;TKBool.lib;TKOffset.lib;TKService.lib;TKV3d.lib;TKOpenGl.lib;TKFillet.lib;TKernel.lib;occQt.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPBase.lib;TKSTEPAttr.lib;TKXSBase.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;../bin_qt5.13.2_debug_64;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\win64\vc14\lib;./occView\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shell32.lib;SARibbonBard.lib;TKMath.lib;TKG3d.lib;TKBRep.lib;TKGeomBase.lib;TKGeomAlgo.lib;TKTopAlgo.lib;TKPrim.lib;TKBO.lib;TKBool.lib;TKOffset.lib;TKService.lib;TKV3d.lib;TKOpenGl.lib;TKFillet.lib;TKernel.lib;occQt.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPBase.lib;TKSTEPAttr.lib;TKXSBase.lib;Sketcher.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\Sketcher\debug;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;../bin_qt5.13.2_debug_64;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\win64\vc14\lib;./occView\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>

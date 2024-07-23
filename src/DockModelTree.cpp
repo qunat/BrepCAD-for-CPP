@@ -16,14 +16,22 @@ DockModelTree::DockModelTree(MainWindow* par)
 	scroll->setMaximumWidth(299);
 	dock_tabWidget->setLayoutDirection(Qt::LeftToRight);
 	dock_tabWidget->setTabPosition(QTabWidget::North);
+	//
 	part_tab = new QWidget(dock_tabWidget);
 	part_tab->setObjectName(QStringLiteral("part_tab"));
 	dock_tabWidget->addTab(part_tab, QString());
+	//
 	assemble_tab = new QWidget(dock_tabWidget);
 	assemble_tab->setObjectName(QStringLiteral("assemble_tab"));
 	dock_tabWidget->setAttribute(Qt::WA_StyledBackground);
-	dock_tabWidget->setIconSize(QSize(20, 20));
 	dock_tabWidget->addTab(assemble_tab, QString());
+	//
+	properymanager_tab= new QWidget(dock_tabWidget);
+	properymanager_tab->setObjectName(QStringLiteral("properymanager_tab"));
+	dock_tabWidget->addTab(properymanager_tab, QString());
+	//
+
+	dock_tabWidget->setIconSize(QSize(20, 20));
 	dock_tabWidget->setTabText(0, "");
 	dock_tabWidget->setTabText(1, "");
 	int height = parent->windown_height - parent->ribbonbar_height-parent->statusBar()->geometry().height() - 48;//dock_tabWidget height 
@@ -31,6 +39,8 @@ DockModelTree::DockModelTree(MainWindow* par)
 	dock_tabWidget->setGeometry(QRect(0,0, width, height));
 	dock_tabWidget->setTabIcon(0, QPixmap(":/icon/icons/零件.png"));
 	dock_tabWidget->setTabIcon(1, QPixmap(":/icon/icons/装配.png"));
+	dock_tabWidget->setTabIcon(2, QPixmap(":/icon/icons/属性管理器.png"));
+
 	scroll->setWidget(dock_tabWidget);
 	//dock_tabWidget->show();
 	this->CreateModelTree();
