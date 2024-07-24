@@ -10,12 +10,12 @@ Sketchermanager::Sketchermanager()
 {
 }
 
-
-
 void Sketchermanager::Showgui()
 {
 	auto dockmodeltree =parent->dockmodeltreemap[parent->windownsmanager->current_windown];
 	auto dock_table = dockmodeltree->dock_tabWidget;
 	dock_table->setCurrentIndex(2);
+	auto father = parent->windownsmanager->windowns_name[parent->windownsmanager->current_windown]->myOccView;
+	///connect(father, SIGNAL(mySignal(int)), this, SLOT(mySlot()));
 	
 }

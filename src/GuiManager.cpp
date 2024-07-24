@@ -335,6 +335,8 @@ void MainWindow::CreateRibbon()
 void MainWindow::NewSketch()
 {
     sketchermanager->Showgui();
+    auto father = windownsmanager->windowns_name[windownsmanager->current_windown]->myOccView;
+    connect(father, SIGNAL(mySignal(int)),this, SLOT(mySlot()));
 }
 void  MainWindow::mySlot()
 {

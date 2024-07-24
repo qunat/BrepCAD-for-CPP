@@ -1,6 +1,7 @@
-﻿  Reading Qt configuration (E:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
+﻿  Reading Qt configuration (D:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
   Sketchermanager.cpp
   class any is only available with C++17 or later.
   class template variant is only available with C++17 or later.
+f:\project\brepcad\src\sketcher\sketchermanager.cpp(18): warning C4189: “father”: 局部变量已初始化但不引用
     正在创建库 debug\\Sketcher.lib 和对象 debug\\Sketcher.exp
-  Sketcher.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\Sketcher\debug\Sketcher.dll
+  Sketcher.vcxproj -> F:\project\BrepCAD\src\Sketcher\debug\Sketcher.dll
