@@ -42,7 +42,7 @@
     <OutputDirectory>debug\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>NotSet</CharacterSet>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <IntermediateDirectory>debug\</IntermediateDirectory>
     <PrimaryOutput>SARibbonMainWindowExample</PrimaryOutput>
   </PropertyGroup>
@@ -187,7 +187,7 @@
     <ClCompile Include="Sketchermanager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sketchermanager.h" />
+    <QtMoc Include="Sketchermanager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

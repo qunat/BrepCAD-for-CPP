@@ -1,7 +1,23 @@
-﻿  Reading Qt configuration (D:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
+﻿  Reading Qt configuration (E:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
+  moc Sketchermanager.h
   Sketchermanager.cpp
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x339 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x33a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x33b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x33e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x33f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x340 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x341 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x342 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x346 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x349 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x34b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x34c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x34f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x350 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
   class any is only available with C++17 or later.
   class template variant is only available with C++17 or later.
-f:\project\brepcad\src\sketcher\sketchermanager.cpp(18): warning C4189: “father”: 局部变量已初始化但不引用
-    正在创建库 debug\\Sketcher.lib 和对象 debug\\Sketcher.exp
-  Sketcher.vcxproj -> F:\project\BrepCAD\src\Sketcher\debug\Sketcher.dll
+  moc_Sketchermanager.cpp
+  class any is only available with C++17 or later.
+  class template variant is only available with C++17 or later.
+  Sketcher.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\Sketcher\debug\Sketcher.lib

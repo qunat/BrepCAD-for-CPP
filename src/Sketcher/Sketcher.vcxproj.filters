@@ -20,8 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sketchermanager.h">
+    <QtMoc Include="Sketchermanager.h">
       <Filter>头文件</Filter>
-    </ClInclude>
+    </QtMoc>
   </ItemGroup>
 </Project>
