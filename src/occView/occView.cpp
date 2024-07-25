@@ -207,10 +207,11 @@ void OccView::rotate( void )
 
 void OccView::mousePressEvent( QMouseEvent* theEvent )
 {		
-    emit mySignal(42);
+    
     if (theEvent->button() == Qt::LeftButton)
     {
         onLButtonDown((theEvent->buttons() | theEvent->modifiers()), theEvent->pos());
+        emit mySignal(42);
 
     }
     else if (theEvent->button() == Qt::MidButton && !(theEvent->buttons() & Qt::RightButton))

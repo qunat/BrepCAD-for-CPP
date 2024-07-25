@@ -1,17 +1,17 @@
-﻿  Reading Qt configuration (D:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
+﻿  Reading Qt configuration (E:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
   Generate moc_predefs.h
   Uic'ing occQt.ui...
   Rcc'ing occqt.qrc...
   Moc'ing occQt.h...
   Moc'ing occView.h...
-   Warning: Failed to resolve include "F:/????????/SARibbonCAD/src/occView/Debug/moc_predefs.h" for moc file D:\project\BrepCAD\src\occView\occQt.h
-   Warning: Failed to resolve include "F:/????????/SARibbonCAD/src/occView/Debug/moc_predefs.h" for moc file D:\project\BrepCAD\src\occView\occView.h
+   Warning: Failed to resolve include "F:/????????/SARibbonCAD/src/occView/Debug/moc_predefs.h" for moc file F:\????????\BrepCAD\src\occView\occQt.h
+   Warning: Failed to resolve include "F:/????????/SARibbonCAD/src/occView/Debug/moc_predefs.h" for moc file F:\????????\BrepCAD\src\occView\occView.h
   main.cpp
   occQt.cpp
   occView.cpp
-d:\project\brepcad\src\occview\occview.cpp(297): warning C4189: “aY”: 局部变量已初始化但不引用
-d:\project\brepcad\src\occview\occview.cpp(296): warning C4189: “aX”: 局部变量已初始化但不引用
+f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(298): warning C4189: “aY”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
+f:\宁波莱布尼茨项目\brepcad\src\occview\occview.cpp(297): warning C4189: “aX”: 局部变量已初始化但不引用 (编译源文件 occView.cpp)
   qrc_occqt.cpp
   moc_occQt.cpp
   moc_occView.cpp
-  occQt.vcxproj -> D:\project\BrepCAD\src\occView\debug\occQt.lib
+  occQt.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\occView\debug\occQt.lib
