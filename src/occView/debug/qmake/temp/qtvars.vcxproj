@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ADMINI~1\AppData\Local\Temp\qo4prwfa.sdy;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\ADMINI~1\AppData\Local\Temp\qo4prwfa.sdy;/include;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\ki0zhslt.4b5;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\ki0zhslt.4b5;/include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -49,7 +49,7 @@
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Widgetsd.lib;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Guid.lib;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Cored.lib;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Guid.lib;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\Qt5Cored.lib;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -72,8 +72,8 @@
   <ItemGroup>
     <CustomBuild Include="moc_predefs.h.cbt">
       <FileType>Document</FileType>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxE:\Qt\Qt5.13.2\5.13.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W0 -E E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc_predefs.h</Command>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxD:\Qt\Qt5.13.2\5.13.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W0 -E D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc_predefs.h</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">moc_predefs.h;%(Outputs)</Outputs>
     </CustomBuild>

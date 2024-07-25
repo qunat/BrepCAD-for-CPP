@@ -95,4 +95,4 @@
   moc_SARibbonToolButton.cpp
   moc_SAWindowButtonGroup.cpp
     正在创建库 ..\..\bin_qt5.13.2_debug_64\\SARibbonBard.lib 和对象 ..\..\bin_qt5.13.2_debug_64\\SARibbonBard.exp
-  SARibbonBar.vcxproj -> F:\project\BrepCAD\src\SARibbonBar\..\..\bin_qt5.13.2_debug_64\SARibbonBard.dll
+  SARibbonBar.vcxproj -> D:\project\BrepCAD\src\SARibbonBar\..\..\bin_qt5.13.2_debug_64\SARibbonBard.dll
