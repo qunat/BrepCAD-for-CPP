@@ -1,24 +1,31 @@
-﻿  Reading Qt configuration (E:/Qt/Qt5.13.2/5.13.2/msvc2017_64/bin/qmake)
-  moc Sketchermanager.h
+﻿  moc Sketchermanager.h
   Sketchermanager.cpp
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x377 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x378 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x379 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x37c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x37d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x37e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x37f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x380 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x384 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x387 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x389 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x38a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x38d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x38e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4a4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4a5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4aa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4b1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4b4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4b6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4b7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x4bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x5aa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x5ac 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x5ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x5af 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x8ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x8d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x8d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+d:\project\brepcad\src\sketcher\sketchermanager.cpp : warning C4828: 文件包含在偏移 0x8d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
   class any is only available with C++17 or later.
   class template variant is only available with C++17 or later.
-f:\宁波莱布尼茨项目\brepcad\src\sketcher\sketchermanager.cpp(33): warning C4189: “axis”: 局部变量已初始化但不引用
+d:\project\brepcad\src\sketcher\sketchermanager.cpp(63): warning C4189: “coord”: 局部变量已初始化但不引用
   moc_Sketchermanager.cpp
   class any is only available with C++17 or later.
   class template variant is only available with C++17 or later.
-  Sketcher.vcxproj -> F:\宁波莱布尼茨项目\BrepCAD\src\Sketcher\debug\Sketcher.lib
+  Sketcher.vcxproj -> D:\project\BrepCAD\src\Sketcher\debug\Sketcher.lib

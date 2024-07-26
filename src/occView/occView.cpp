@@ -210,8 +210,9 @@ void OccView::mousePressEvent( QMouseEvent* theEvent )
     
     if (theEvent->button() == Qt::LeftButton)
     {
+		emit mySignal(42);
         onLButtonDown((theEvent->buttons() | theEvent->modifiers()), theEvent->pos());
-        emit mySignal(42);
+        
 
     }
     else if (theEvent->button() == Qt::MidButton && !(theEvent->buttons() & Qt::RightButton))

@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\ki0zhslt.4b5;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\ki0zhslt.4b5;/include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\qycluds3.dmm;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtWidgets;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtGui;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtANGLE;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;C:\Users\Administrator.WIN-I5KMV99JDCS\AppData\Local\Temp\qycluds3.dmm;/include;D:\Qt\Qt5.13.2\5.13.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
