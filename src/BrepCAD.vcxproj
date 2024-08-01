@@ -14,7 +14,7 @@
     <ProjectGuid>{E324E7F6-938E-3820-84FE-F0E35275C4B1}</ProjectGuid>
     <RootNamespace>SARibbonMainWindowExample</RootNamespace>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.22000.0</WindowsTargetPlatformMinVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
     <ProjectName>BrepCAD</ProjectName>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\src;.;debug;./occView;/include;./SARibbonBar;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\inc;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\dxflib\src;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\src;.;debug;./occView;/include;./SARibbonBar;D:\OpenCASCADE-7.4.0-vc14-64\opencascade-7.4.0\inc;E:\Qt\Qt5.13.2\5.13.2\msvc2017_64\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458   /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -178,6 +178,7 @@
   <ItemGroup>
     <ClCompile Include="display\DisplayCore.cpp" />
     <ClCompile Include="DockModelTree.cpp" />
+    <ClCompile Include="DxfReader.cpp" />
     <ClCompile Include="GuiManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PartSolution.cpp" />
@@ -214,6 +215,7 @@
     <ClInclude Include="DockModelTree.h" />
     <QtMoc Include="WindownsManager.h" />
     <QtMoc Include="PartSolution.h" />
+    <ClInclude Include="DxfReader.h" />
     <ClInclude Include="RibbonManager.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,2 +1,10 @@
-﻿  Generate moc_predefs.h
-  BrepCAD.vcxproj -> D:\project\BrepCAD\src\debug\BrepCAD.exe
+﻿  DxfReader.cpp
+f:\project\brepcad\src\dxflib\src\dl_codes.h(44): warning C4005: “strcasecmp”: 宏重定义
+  d:\opencascade-7.4.0-vc14-64\opencascade-7.4.0\inc\standard_cstring.hxx(26): note: 参见“strcasecmp”的前一个定义
+f:\project\brepcad\src\dxfreader.cpp(32): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+f:\project\brepcad\src\dxfreader.cpp(88): warning C4100: “ellipse”: 未引用的形参
+f:\project\brepcad\src\dxfreader.cpp(92): warning C4100: “polyline”: 未引用的形参
+f:\project\brepcad\src\dxfreader.cpp(96): warning C4100: “vertex”: 未引用的形参
+f:\project\brepcad\src\dxfreader.cpp(100): warning C4100: “spline”: 未引用的形参
+f:\project\brepcad\src\dxfreader.cpp(104): warning C4100: “knot”: 未引用的形参
+f:\project\brepcad\src\dxfreader.cpp(108): warning C4100: “cp”: 未引用的形参
